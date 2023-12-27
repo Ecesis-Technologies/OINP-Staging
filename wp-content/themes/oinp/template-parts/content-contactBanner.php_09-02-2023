@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Template part for displaying page content in page.php.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package oinp
+ */
+
+?>
+<?php if (have_rows('contact_banner')) :
+    while (have_rows('contact_banner')) : the_row(); ?>
+        <section class="<?php echo (get_sub_field('theme')=='Green')?'footer-section3' : 'footer-section2'; ?>">
+            <div class="container">
+                <div class="footer-inner-main">
+                    <div class="footer-ques-title">
+                        <span class="footer2-question"><?php _ol(get_sub_field('title')); ?></span>
+                    </div>
+                    <div class="faq-button">
+                        <button class="faq-banner-btn" onclick="location.href='<?php _ol(get_sub_field('vta_url')); ?>';">
+                            <span class="get-started"><?php _ol(get_sub_field('cta_label')); ?></span>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/right-arrow.png" alt="right-arrow" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<?php
+    endwhile;
+endif; ?>
