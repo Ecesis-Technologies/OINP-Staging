@@ -1,0 +1,337 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OINP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-17 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: oinp"
+
+#: page-home.php:492
+msgid "(Approx)"
+msgstr ""
+
+#: page-home.php:478
+msgid "10-15 years"
+msgstr ""
+
+#: page-home.php:480
+msgid "15+ years"
+msgstr ""
+
+#: page-home.php:472
+msgid "2-5 years"
+msgstr ""
+
+#: footer.php:151
+msgid "2023 OINP ESI"
+msgstr ""
+
+#: footer.php:67
+msgid "325 Front St W Suite 300"
+msgstr ""
+
+#: page-home.php:474
+msgid "5-7 years"
+msgstr ""
+
+#: page-home.php:476
+msgid "7-10 years"
+msgstr ""
+
+#: page-home.php:494
+msgid "800,000"
+msgstr ""
+
+#: page-home.php:404 page-home.php:406
+msgid "A Domestic Business Owner"
+msgstr ""
+
+#: page-home.php:444
+msgid "Agriculture"
+msgstr ""
+
+#: footer.php:153
+msgid "All rights reserved."
+msgstr ""
+
+#: page-home.php:396 page-home.php:398
+msgid "An International Entrepreneur"
+msgstr ""
+
+#: footer.php:169
+msgid "Apply Now"
+msgstr ""
+
+#: page-contact.php:88
+msgid "Audi"
+msgstr ""
+
+#. Name of the template
+msgid "Blank Page"
+msgstr ""
+
+#: page-home.php:464
+msgid "Business Experience"
+msgstr ""
+
+#: page-contact.php:77
+msgid "Business Owner"
+msgstr ""
+
+#: page-contact.php:82
+msgid "Company Name"
+msgstr ""
+
+#. Name of the template
+msgid "Contact Page"
+msgstr ""
+
+#: page-home.php:516
+msgid "Continue"
+msgstr ""
+
+#: page-contact.php:84
+msgid "Country"
+msgstr ""
+
+#: page-home.php:388
+msgid "Eligibility requirements"
+msgstr ""
+
+#: page-contact.php:65
+msgid "Email"
+msgstr ""
+
+#: page-home.php:548
+msgid "Enter Email Id"
+msgstr ""
+
+#: page-home.php:556
+msgid "Enter Mobile Number"
+msgstr ""
+
+#: page-home.php:550
+msgid "Enter your Email Id"
+msgstr ""
+
+#: page-home.php:534
+msgid "Enter your firstname"
+msgstr ""
+
+#: page-home.php:542
+msgid "Enter your Lastname"
+msgstr ""
+
+#: page-home.php:558
+msgid "Enter your Mobile number"
+msgstr ""
+
+#: page-contact.php:75
+msgid "Executive Team / C-Suite"
+msgstr ""
+
+#: page-contact.php:59 page-home.php:532
+msgid "First Name"
+msgstr ""
+
+#: functions.php:17
+msgid "Footer Menu 1"
+msgstr ""
+
+#: functions.php:19
+msgid "Footer Menu 2"
+msgstr ""
+
+#: page-contact.php:76
+msgid "Founder"
+msgstr ""
+
+#: footer.php:39
+msgid "Go to top"
+msgstr ""
+
+#: functions.php:21
+msgid "Hamilton Menu"
+msgstr ""
+
+#: page-home.php:454
+msgid "Healthcare"
+msgstr ""
+
+#: page-home.php:446
+msgid "Hospitality"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://triplequotient.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wordpress.org/themes/"
+msgstr ""
+
+#: page-contact.php:105
+msgid "I agree to the"
+msgstr ""
+
+#: page-contact.php:94
+msgid "I am a Business Owner in Canada"
+msgstr ""
+
+#: page-contact.php:95
+msgid "I am an Immigration Agent"
+msgstr ""
+
+#: page-contact.php:93
+msgid "I am an International Entrepreneur"
+msgstr ""
+
+#: page-home.php:392
+msgid "I'm"
+msgstr ""
+
+#: page-contact.php:79
+msgid "Immigration Agent"
+msgstr ""
+
+#: page-home.php:418 page-home.php:420
+msgid "Investment/Buying a Business"
+msgstr ""
+
+#: page-contact.php:62 page-home.php:540
+msgid "Last Name"
+msgstr ""
+
+#: footer.php:167
+msgid "Let's Talk"
+msgstr ""
+
+#: page-home.php:414
+msgid "Looking For"
+msgstr ""
+
+#: page-contact.php:78
+msgid "Management Team"
+msgstr ""
+
+#: page-contact.php:74
+msgid "Managing Director"
+msgstr ""
+
+#: page-home.php:450
+msgid "Manufacturing"
+msgstr ""
+
+#: page-contact.php:92
+msgid "Media"
+msgstr ""
+
+#: page-contact.php:87
+msgid "Mercedes"
+msgstr ""
+
+#. Name of the theme
+msgid "OINP"
+msgstr ""
+
+#. Name of the template
+msgid "OINP Home"
+msgstr ""
+
+#: page-contact.php:80 page-contact.php:96 page-contact.php:96
+msgid "Other"
+msgstr ""
+
+#: page-home.php:456
+msgid "Others"
+msgstr ""
+
+#: page-home.php:492
+msgid "Personal Net Worth"
+msgstr ""
+
+#: page-contact.php:67
+msgid "Phone"
+msgstr ""
+
+#: functions.php:15
+msgid "Primary Menu"
+msgstr ""
+
+#: footer.php:141
+msgid "Privacy Policy"
+msgstr ""
+
+#: page-contact.php:105
+msgid "privacy policy"
+msgstr ""
+
+#: page-home.php:448
+msgid "Retail"
+msgstr ""
+
+#: page-contact.php:86
+msgid "Saab"
+msgstr ""
+
+#: page-home.php:426 page-home.php:428
+msgid "Selling Existing Business"
+msgstr ""
+
+#. Name of the template
+msgid "Service Page"
+msgstr ""
+
+#: page-home.php:706
+msgid "Social Media"
+msgstr ""
+
+#: page-contact.php:108 page-home.php:568
+msgid "Submit"
+msgstr ""
+
+#: page-home.php:452
+msgid "Technology"
+msgstr ""
+
+#. Name of the template
+msgid "Theme 2"
+msgstr ""
+
+#. Description of the theme
+msgid "Theme for OINP site"
+msgstr ""
+
+#: footer.php:69
+msgid "Toronto, ON M5V 2Y1"
+msgstr ""
+
+#. Author of the theme
+msgid "TQ"
+msgstr ""
+
+#: page-home.php:438
+msgid "Type of Business"
+msgstr ""
+
+#: page-home.php:470
+msgid "Under 2 years"
+msgstr ""
+
+#: page-contact.php:85
+msgid "Volvo"
+msgstr ""
+
+#: page-contact.php:73
+msgid "What is your job title?"
+msgstr ""

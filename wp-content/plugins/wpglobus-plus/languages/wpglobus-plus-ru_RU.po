@@ -1,0 +1,694 @@
+# Copyright (C) 2018 WPGlobus
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPGlobus Plus\n"
+"Report-Msgid-Bugs-To: support@wpglobus.com\n"
+"POT-Creation-Date: 2018-03-05 21:32-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Gregory Karpinsky <gregory@tiv.net>\n"
+"Language-Team: The WPGlobus Team <support@wpglobus.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. translators: %1$s - plugin name (eg ACF); %2$s - plugin version (eg 1.2.3).
+msgctxt "List of modules"
+msgid ""
+"To use this module, you need to install and activate the %1$s plugin version "
+"%2$s or later."
+msgstr ""
+"Чтобы использовать этот модуль, Вам необходимо установить и активировать "
+"плагин %1$s %2$s или более поздней версии."
+
+msgctxt "List of modules"
+msgid "ACF Plus"
+msgstr "ACF плюс"
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields: %1sWYSIWYG Field%2s"
+msgstr "Мультиязычный плагин Advanced Custom Fields: %1sПоле 'WYSIWYG'%2s"
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields: %1sTable Field%2s"
+msgstr "Мультиязычный плагин Advanced Custom Fields: %1sПоле 'Table'%2s"
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields PRO: %1sOptions&Settings%2s"
+msgstr "Мультиязычный плагин Advanced Custom Fields PRO: %1sНастройки%2s"
+
+msgctxt "List of modules"
+msgid "Publish"
+msgstr "Издатель"
+
+msgctxt "List of modules"
+msgid "Publish only the completed translations"
+msgstr "Публиковать только завершенные переводы"
+
+msgctxt "List of modules"
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+msgctxt "List of modules"
+msgid "Multilingual Taxonomies and CPTs"
+msgstr "Мультиязычные таксономии и Пользовательские типы записей"
+
+msgctxt "List of modules"
+msgid "Current PHP version"
+msgstr "Версия PHP"
+
+msgctxt "List of modules"
+msgid ""
+"WPGlobus requires PHP version 5.6 or higher to use the Taxonomies module."
+msgstr ""
+"Для работы с модулем Таксономии требуется PHP 5.6 или более поздняя версия."
+
+msgctxt "List of modules"
+msgid "Slug"
+msgstr "УРЛ"
+
+msgctxt "List of modules"
+msgid "Translate post/page URLs"
+msgstr "Переводы УРЛов для записей и страниц"
+
+msgctxt "List of modules"
+msgid "Switcher Menu"
+msgstr "Переключатель в меню"
+
+msgctxt "List of modules"
+msgid "Customize the Language Switcher Menu layout"
+msgstr "Стиль переключателя языков в меню"
+
+msgid "Option"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Menu Settings"
+msgstr "Настройки меню"
+
+msgctxt "List of modules"
+msgid "Associate different menus with different languages"
+msgstr "Привязка меню к языкам"
+
+msgctxt "List of modules"
+msgid "Editor"
+msgstr "Редактор"
+
+msgctxt "List of modules"
+msgid "Universal Multilingual Editor"
+msgstr "Универсальный мультиязычный редактор"
+
+#. translators: %1s is PHP version.
+msgid ""
+"For this module to work correctly, PHP version %1s or newer is required."
+msgstr "Для работы модуля требуется PHP версии %1s или выше."
+
+msgctxt "List of modules"
+msgid "TinyMCE"
+msgstr "TinyMCE"
+
+msgctxt "List of modules"
+msgid "WYSIWYG Editor"
+msgstr "Редактор WYSIWYG"
+
+msgctxt "List of modules"
+msgid "TablePress"
+msgstr "TablePress"
+
+msgctxt "List of modules"
+msgid "Multilingual TablePress"
+msgstr "Многоязычный TablePress"
+
+msgctxt "List of modules"
+msgid "Yoast SEO Plus"
+msgstr "Yoast SEO Плюс"
+
+msgctxt "List of modules"
+msgid "Multilingual Focus Keywords and Page Analysis"
+msgstr "Многоязычные ключевые слова и SEO-анализ страницы"
+
+msgctxt "List of modules"
+msgid "Yoast SEO Premium support is in %1sBeta stage%2s"
+msgstr "Поддержка Yoast SEO Premium в %1sстадии Бета%2s"
+
+msgid ""
+"Load the page in the %sBuilder mode%s to work with a multilingual table."
+msgstr ""
+"Для работы с мультиязычной таблицей необходимо перезагрузить страницу в "
+"режиме %sБилдер%s."
+
+msgid ""
+"This table already has multilingual data. To preserve it, reload the page in "
+"the %sBuilder mode%s."
+msgstr ""
+"Эта таблица содержит мультиязычные данные. Чтобы их сохранить, необходимо "
+"перезагрузить страницу в режиме %sБилдер%s."
+
+msgid "This field `table` is not multilingual."
+msgstr "Поле `table` не мультиязычное."
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Page"
+msgstr "Страница"
+
+#. translators: placeholders for 'id', 'name'
+msgid "%1$s or %2$s of the HTML element"
+msgstr "%1$s или %2$s HTML элемента страницы"
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Add"
+msgstr "Добавить"
+
+#. translators: %1 - id, %2 - name, %3 - Page.
+msgid ""
+"To find the element's %1$s or %2$s, inspect it in the browser console on the "
+"page specified in the parameter %3$s of the table."
+msgstr ""
+"Для получения %1$s или %2$s элемента используйте консоль браузера на "
+"странице, которая указана в параметре %3$s таблицы."
+
+msgid "Usually, it is the Post Edit page (post.php) or the Settings page."
+msgstr ""
+"Обычно это страница редактирования поста (post.php) или страница настроек."
+
+#. translators: %1 - wpml-config.xml.
+msgid ""
+"If your active theme has a configuration file %1$s and has some fields in "
+"the admin area that you need to translate, then you can get hints from that "
+"file."
+msgstr ""
+"Если ваша используемая тема имеет файл конфигурации %1$s и создаёт в админке "
+"поля, которые необходимо сделать многоязычными, то его можно использовать в "
+"качестве подсказки."
+
+#. translators: %1 - admin-texts, %2 - custom-fields.
+msgid "Look for the %1$s and %2$s sections in the configuration file "
+msgstr "Смотрите элементы %1$s и %2$s в файле конфигурации "
+
+#. translators: %1 - WPGlobus, %2 - URL.
+msgid ""
+"on the %1$s settings page, use %2$sthis link%3$s to view the configuration "
+"file if your theme has it."
+msgstr ""
+"на странице настроек %1$s, используйте эту %2$sссылку%3$s чтобы простмотреть "
+"файл конфигурации."
+
+msgid "The elements displayed are for"
+msgstr "Показаны элементы для"
+
+msgid "Select a page"
+msgstr "Выберите страницу"
+
+msgid "All pages"
+msgstr "Все страницы"
+
+msgid "General"
+msgstr "Основные"
+
+msgid "WPGlobus Menu Settings"
+msgstr "WPGlobus: Настройки меню"
+
+msgid ""
+"Your theme does not natively support menus or does not register any Theme "
+"Location."
+msgstr ""
+"Ваша тема не поддерживает произвольные меню или не определяет области для их "
+"показа."
+
+msgid "You need to assign a menu for this Theme Location."
+msgstr "Вам необходимо выбрать меню для этой Области Темы."
+
+msgid ""
+"With WPGlobus Plus, you can associate different menus with each language. "
+"Choose which menu should be displayed at this Theme Location - by clicking "
+"on the table cells."
+msgstr ""
+"WPGlobus Plus позволяет выполнить привязку меню к языкам. Выберите, какое "
+"меню должно быть показано в этой Области Темы, нажимая на соответствующие "
+"ячейки таблицы."
+
+msgid "Click to select"
+msgstr "Нажмите, чтобы выбрать"
+
+msgid "Language Selector Menu Style"
+msgstr "Стиль меню выбора языка"
+
+msgid "Drop-down languages menu or Flat (in one line)"
+msgstr "Показать список языков в виде выпадающего меню или в одну строку"
+
+msgid "Do not change"
+msgstr "Ничего не менять"
+
+msgid "Drop-down (vertical)"
+msgstr "Выпадающее меню"
+
+msgid "Flat (horizontal)"
+msgstr "В одну строку"
+
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+msgid ""
+"Module couldn't find file '%1$s'. Please contact with us using %2$sWPGlobus "
+"Help Desk%3$s"
+msgstr ""
+"Файл '%1$s' не найден. Пожалуйста, обратитесь в %2$sСлужбу Поддержки%3$s"
+
+msgid "The Post Types and Taxonomies"
+msgstr "Текущие Типы Постов и Таксономии"
+
+msgid "Options"
+msgstr "Настройки"
+
+msgid "Rewrite rules"
+msgstr "Правила перезаписи УРЛ"
+
+msgid "Multilingual slug"
+msgstr "Многоязычный ярлык"
+
+msgid "Key: %s"
+msgstr "Ключ: %s"
+
+msgid "Not found in the options table."
+msgstr "Не найден в таблице настроек."
+
+msgid "Debug Mode"
+msgstr "Режим отладки"
+
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+msgid "Post type"
+msgstr "Тип записи"
+
+msgid "%s slug"
+msgstr "Ярлык %s"
+
+msgid "Post Type label:"
+msgstr "Тип записи: метка"
+
+msgid "Post Type name:"
+msgstr "Тип записи: название"
+
+msgid ""
+"To edit the slug for the default language, please use the Custom Rewrite "
+"Slug parameter in the settings of the plugin that created this Custom Post "
+"Type."
+msgstr ""
+"Для редактирования ярлыка для языка по умолчанию используйте параметр Custom "
+"Rewrite Slug в настройках плагина, с помощью которого был создан этот "
+"Пользовательский Тип Записи."
+
+msgid ""
+"To edit the slug for &#8220;%s&#8221 in the default language, please visit "
+"the Settings->Permalinks page."
+msgstr ""
+"Чтобы изменить ярлык &#8220;%s&#8221 для языка по умолчанию перейдите на "
+"страницу Настройки->Постоянные ссылки."
+
+msgid "Terms of %s (%d items total) :"
+msgstr "Элементы %s (всего %d) :"
+
+msgid "Hide empty terms."
+msgstr "Скрыть пустые элементы."
+
+msgid "Attention!"
+msgstr "Внимание!"
+
+msgid ""
+"You can rewrite the Taxonomy Module settings to make them matching %1$s."
+msgstr ""
+"Настройки модуля Таксономии можно перезаписать и привести в соответствие с "
+"%1$s."
+
+msgid "If you believe that the settings should be rewritten, click"
+msgstr "Если вы уверены в необходимости перезаписи, то нажмите"
+
+msgid "%1$sRewrite Settings%2$s"
+msgstr "%1$sПерезаписать настройки%2$s"
+
+msgid "Module options is empty."
+msgstr "Массив настроек модуля пуст."
+
+msgid ""
+"If TinyMCE: WYSIWYG Editor module is used on the \"post.php\" page then no "
+"additional settings are required. For other pages, however, we need to know, "
+"a click on which page element will save the TinyMCE content. For that, you "
+"have to specify the page and the name, id, or class of the element. We "
+"recommend using the name attribute."
+msgstr ""
+"Если TinyMCE: WYSIWYG Editor модуль подключается для использования на "
+"странице \"post.php\", то дополнительных настроек не требуется. Но для "
+"других страниц, поскольку заранее не известно, при нажатии на какой элемент "
+"страницы будет сохранён контент редактора TinyMCE, необходимо указать "
+"страницу и атрибут name, id или class этого элемента. Рекомендуем "
+"использовать атрибут name."
+
+msgid ""
+"Such page element could be the same for several TinyMCE editors on the same "
+"page."
+msgstr ""
+"Такой элемент может быть одинаковым для нескольких редакторов TinyMCE на "
+"одной странице."
+
+#. translators: placeholders for 'name', 'id', 'class'
+msgid "%1$s, #%2$s, or .%3$s of the HTML element"
+msgstr "%1$s, #%2$s или .%3$s HTML-элемента"
+
+msgid "You need to set name, #id or .class to save content."
+msgstr "Необходимо задать имя, #id или .class для сохранения содержимого."
+
+msgid "Click Red Globe to open TinyMCE settings page."
+msgstr ""
+"Нажмите на красную иконку глобуса, чтобы открыть страницу настроек TinyMCE."
+
+msgid "Sitemap for"
+msgstr "Карта сайта для"
+
+msgid ""
+"To use this module, you need to install and activate the Yoast SEO plugin "
+"version 2.3.4 or later."
+msgstr ""
+"Чтобы использовать этот модуль, необходимо установить и активировать плагин "
+"Yoast SEO 2.3.4 или более поздней версии."
+
+msgid "XML sitemaps that Yoast SEO generates are"
+msgstr "Файлы Sitemap XML, которые генерирует Yoast SEO,"
+
+msgctxt "yoastseo-settings"
+msgid "disabled"
+msgstr "выключены"
+
+msgid "To enable, visit the %1$sYoast SEO Features page%2$s."
+msgstr ""
+"Для активации XML-карты сайта перейдите на страницу %1$sВозможности Yoast SEO"
+"%2$s."
+
+msgctxt "yoastseo-settings"
+msgid "enabled"
+msgstr "включены"
+
+msgid "Languages status"
+msgstr "Статус языков"
+
+msgid "No items found."
+msgstr "К сожалению, ничего не найдено."
+
+msgid "Single Action"
+msgstr "Единичное действие"
+
+msgid "Single Post Action"
+msgstr ""
+
+msgid ""
+"WARNING: this operation is non-reversible. It is strongly recommended that "
+"you backup your database before proceeding."
+msgstr ""
+"Предупреждение: эта операция является необратимой. Настоятельно рекомендуем "
+"сделать резервную копию базы данных перед продолжением."
+
+msgid "Set draft status"
+msgstr "Перевод в статус «черновик»"
+
+msgid ""
+"By default, when you publish a post, all languages get the \"published\" "
+"status. By using this tool, you can set specific language(s) to draft, for "
+"any post, page or custom post type."
+msgstr ""
+"Когда Вы публикуете новый контент, все переводы по умолчанию получают статус "
+"«опубликовано». Используя эту программу, можно перевести определенные языки "
+"в статус «черновик» - для всех записей, страниц или пользовательских типов "
+"записей (CPT)."
+
+msgid "1. Select a language and the post type:"
+msgstr "1. Выберите язык и тип записи:"
+
+#. translators: drop-down menu prompt
+msgid "select a language"
+msgstr "Выберите язык"
+
+#. translators: drop-down menu prompt
+msgid "select a post type"
+msgstr "Выберите тип записи"
+
+msgid "2. Click the link below:"
+msgstr "2. Нажмите на ссылку:"
+
+msgid "No post_id parameter."
+msgstr "Отсутствует параметр post_id."
+
+msgid "To change the language status for a specific post, on the edit page"
+msgstr ""
+"Для изменения статуса языков для определенного поста нужно на странице "
+"редактирования"
+
+msgid ""
+"in the %1$sPublish%2$s metabox, click the %1$sPost Action%2$s button (see "
+"the screenshot)"
+msgstr ""
+
+msgid "Incorrect post_id parameter."
+msgstr "Неверный параметр post_id."
+
+msgid "for post ID"
+msgstr "для ID записи"
+
+msgid ""
+"By default, when you publish a post, all languages get the \"published\" "
+"status. By using this tool, you can set specific language(s) to draft, for "
+"the post by specifying `post_id`."
+msgstr ""
+"По умолчанию, когда вы публикуете запись, все языки получают статус "
+"\"опубликовано\". С помощью этого инструмента вы можете установить "
+"определенные языки в статус \"черновик\", указав параметр `post_id`."
+
+msgid "Select all languages"
+msgstr "Выбрать все языки"
+
+msgid "Delete all languages"
+msgstr "Удалить все языки"
+
+msgid "Start processing"
+msgstr "Запустить процесс"
+
+msgid "This post is available in the main language (%s) only."
+msgstr "Эта запись доступна только на основном языке (%s)."
+
+msgid "This post has been marked as Draft."
+msgstr "Эта запись была отмечена как Черновик."
+
+msgid "Please, visit later..."
+msgstr "Пожалуйста, попробуйте позже!"
+
+msgid "Set Draft"
+msgstr "Перевод в статус «черновик»"
+
+msgid "URL format"
+msgstr "Формат URL-адреса"
+
+msgid "Unknown language"
+msgstr "Неизвестный язык"
+
+msgid "Disabled post type"
+msgstr "Этот тип записи в данный момент отключен в настройках."
+
+msgid ""
+"Setting as \"draft\" all records with post type \"%1$s\" for language \"%2$s"
+"\""
+msgstr ""
+"Установка статуса «черновик» для записей с типом «%1$s» на для языке «%2$s»"
+
+msgid "Already set to \"%s\". Not changing."
+msgstr "Запись находится в статусе «%s». Не меняю."
+
+msgid "Setting to Draft FAILED!"
+msgstr "Установка в статус «черновик» НЕ ВЫПОЛНЕНА!"
+
+msgid "Successfully set to Draft"
+msgstr "Установлено в статус «черновик»"
+
+msgid "Done."
+msgstr "Готово."
+
+msgid "No records found."
+msgstr "Записи этого типа не найдены."
+
+msgid "Back to WPGlobus Plus"
+msgstr "Вернуться к WPGlobus Плюс"
+
+msgid "Post Action"
+msgstr ""
+
+msgid "Setting to \"%s\" FAILED!"
+msgstr "Не удалось установить в \"%s\"!"
+
+msgid "Successfully set to \"%s\""
+msgstr "Установлено в \"%s\""
+
+msgid "Parameter `action` is incorrect."
+msgstr "Неверный параметр `action`"
+
+msgid "Parameter `action` was not set."
+msgstr "Параметр `action` не был установлен"
+
+msgid "Setting as \"draft\" for post ID \"%1$s\" for language(s) \"%2$s\""
+msgstr ""
+"Установка статуса \"черновик\" для записи с post ID \"%1$s\" для языка(-ов) "
+"\"%2$s\""
+
+msgid "No record found."
+msgstr "Записи не найдены."
+
+msgid "Empty array of languages."
+msgstr "Пустой список языков."
+
+msgid "Updated."
+msgstr "Обновлено."
+
+msgid "Plugin URI"
+msgstr "УРЛ"
+
+#. translators: %1$s, %2$s are placeholders for the A tag.
+msgid "go to the %1$sEditor Settings%2$s page"
+msgstr "перейти на страницу %1$sНастройки редактора%2$s"
+
+#. translators: %1$s, %2$s are placeholders for non-translatable texts.
+msgid ""
+"add the %2$s and %3$s element names for the %1$s Page - see the screenshot "
+"below:"
+msgstr "на странице %1$s добавить элементы %2$s и %3$s, см. скриншот"
+
+msgid "WPGlobus Plus supports multilingual Author Boxes"
+msgstr "WPGlobus Плюс поддерживает многоязычные Author Box"
+
+msgid "To enable multilingual editing on the Edit User pages, you need to:"
+msgstr ""
+"Для добавления многоязычных полей на странице редактирования данных "
+"пользователя вам нужно"
+
+msgid "No configuration is required."
+msgstr "Не требует настроек."
+
+msgid "Сompatibility Plus"
+msgstr "Совместимость Плюс"
+
+msgid "Go to WPGlobus Menu Settings page"
+msgstr "Перейти к настройкам меню WPGlobus"
+
+msgid "Go to WPGlobus Plus Options page"
+msgstr "Перейдите к странице настроек WPGlobus Плюс"
+
+msgid "WPGlobus Plus Options"
+msgstr "Настройки WPGlobus Плюс"
+
+msgid "WPGlobus Plus"
+msgstr "WPGlobus Плюс"
+
+msgctxt "Part of the WPGlobus Plus"
+msgid "Plus"
+msgstr "Плюс"
+
+msgid "Active Modules"
+msgstr "Активные модули"
+
+msgid "Uncheck the modules you are not planning to use:"
+msgstr "Отметьте только те модули, которые Вы планируете использовать:"
+
+msgid "Please, activate module Publish"
+msgstr "Пожалуйста, активируйте модуль \"Издатель\""
+
+msgid "Please, activate module WPGlobus Editor"
+msgstr "Пожалуйста, активируйте модуль WPGlobus Редактор"
+
+msgid "Please, activate module TinyMCE: WYSIWYG Editor"
+msgstr "Пожалуйста, активируйте модуль TinyMCE: WYSIWYG редактор"
+
+msgid "Please, activate module Taxonomies: Multilingual Taxonomies and CPTs"
+msgstr ""
+"Пожалуйста, активируйте модуль Таксономии: Многоязычные таксономии и "
+"Пользовательские типы записей"
+
+msgid ""
+"With the “Taxonomies” module, you will be able to translate slugs of the "
+"categories, tags, and terms, including those coming with Custom Post Types."
+msgstr ""
+"При помощи модуля “Таксономии” вы сможете перевести УРЛы категорий, меток и "
+"терминов, включая те, что связаны с Пользовательскими типами записей."
+
+msgid ""
+"This module is currently at a beta-testing stage. Please contact us for more "
+"details."
+msgstr ""
+"Этот модуль находится в стадии разработки. Чтобы узнать подробности, "
+"свяжитесь с нами."
+
+msgid ""
+"Please, activate module Yoast SEO Plus: Multilingual Focus Keywords and Page "
+"Analysis"
+msgstr "Пожалуйста, активируйте модуль Yoast SEO Плюс"
+
+msgid "Modules"
+msgstr "Модули"
+
+msgid "Editor Settings"
+msgstr "Настройки редактора"
+
+msgid "TinyMCE Settings"
+msgstr "Настройки TinyMCE"
+
+msgid "Publish"
+msgstr "Издатель"
+
+msgid "Yoast SEO Plus"
+msgstr "Yoast SEO Плюс"
+
+msgid "https://wpglobus.com/product/wpglobus-plus/"
+msgstr "https://wpglobus.com/ru/product/wpglobus-plus/"
+
+msgid ""
+"Extend functionality of the <a href=\"https://wordpress.org/plugins/wpglobus/"
+"\">WPGlobus Multilingual Plugin</a>."
+msgstr ""
+"Расширение функциональности <a href=\"https://ru.wordpress.org/plugins/"
+"wpglobus/\">плагина WPGlobus</a>."
+
+msgid "WPGlobus"
+msgstr "WPGlobus"
+
+msgid "https://wpglobus.com/"
+msgstr "https://wpglobus.com/ru/"
+
+#. translators: %1$s - this plugin name. %2$s - the required plugin name.
+msgid "The %1$s will not function unless the core plugin, %2$s, is activated."
+msgstr "%1$s не будет работать, пока плагин %2$s не активирован."
+
+#~ msgid "Bulk Actions"
+#~ msgstr "Пакетные действия"
+
+#~ msgid ""
+#~ "in the %1$sPublish%2$s metabox, click the %1$sBulk Actions%2$s button "
+#~ "(see the screenshot)"
+#~ msgstr ""
+#~ "в метабоксе %1$sОпубликовать%2$s перейти по кнопке %1$sПакетные действия"
+#~ "%2$s (см.скриншот)"
+
+#~ msgid "Bulk actions"
+#~ msgstr "Пакетные действия"

@@ -1,0 +1,61 @@
+#easy-sticky-sidebar-1 {	--position2_distance: 50px;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar {
+	--round: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){#easy-sticky-sidebar-1.easy-sticky-sidebar {
+}
+
+}@media screen and (max-width: 767px){#easy-sticky-sidebar-1.easy-sticky-sidebar {
+}
+
+}#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-button {
+	color: #fff;
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	background-color: #000000;
+	letter-spacing: 0.3px;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-image {
+	background-image: url(https://futureisontario.com/wp-content/uploads/2022/11/ss_dummy.jpg);
+	height: 250px;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-text {
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 25px;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-content hr {
+	background-color: #fff;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-call-to-action {
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 19px;
+}
+
+.easy-sticky-sidebar.easy-sticky-sidebar-1 {	font-size: 18px;
+	font-family: 'Gothic A1';
+	font-weight: 700;
+}@media screen and (min-width: 768px) and (max-width: 1024px){.easy-sticky-sidebar.easy-sticky-sidebar-1 {
+}
+
+}@media screen and (max-width: 767px){.easy-sticky-sidebar.easy-sticky-sidebar-1 {
+}
+
+}.easy-sticky-sidebar.easy-sticky-sidebar-1 li.floating-button-0 {	--color:#ffffff;	--hover_color:#ffffff;	--background_color:#000000;	--background_hover_color:#dd3333;}a.sticky-sidebar-button:hover {&#13;&#10;    background-color: red;&#13;&#10;}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-content hr {
+}
+
+.easy-sticky-sidebar.easy-sticky-sidebar-1 .btn-ess-close {
+}
+

@@ -1,0 +1,73 @@
+
+       #wpforms-confirmation-1450{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+
+    .fom-btn{
+      padding: 15px;
+    border-radius: 70px;
+    width: 40%;
+    background-color: #004ac1;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+
+    .fom-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    direction: rtl;
+}
+
+
+.wpforms-confirmation-container-full p:last-of-type{
+  margin:20px!important;
+}
+
+
+/* Elgibility section */
+
+.eligibility .are-you .are-you-in .are-you-tabbox {
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility .are-you-in .are-you-tabbox .are-you-box.you-select .are-box-in .are-in-image {
+  display:none;
+}
+.eligibility .are-you .are-you-in .are-you-tabbox .are-you-box {
+  width:unset;
+}
+.eligibility .are-you .are-you-in .are-you-tabbox .you-select {
+  width:unset;
+}
+
+.eligibility .are-you-in .are-you-tabbox .are-you-box.you-select .are-box-in {
+    padding-right: 46px;
+}
+
+@media (max-width: 1299px){
+.eligibility .are-you-in .are-you-tabbox .are-you-box {
+    height: 666px;
+}
+}
+
+@media (max-width: 767px){
+  .eligibility .are-you .are-you-in .are-you-tabbox {
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+.eligibility .are-you-in .are-you-tabbox .are-you-box.you-select .are-box-in {
+    padding-right: 30px;
+}
+}
