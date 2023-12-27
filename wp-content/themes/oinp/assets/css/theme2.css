@@ -1,0 +1,685 @@
+/*03-02-2023*/
+.main section *, ::after, ::before {
+  box-sizing: border-box;
+}
+.row{
+	--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(var(--bs-gutter-y) * -1);
+margin-right: calc(var(--bs-gutter-x)/ -2);
+margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.text-center{
+	text-align:center;
+}
+.theme2 .in-banner-img{
+	position:relative;
+}
+.theme2 .in-banner-img h1{
+	font-weight: 900;
+font-size: 40px;
+line-height: 235px;
+background: linear-gradient(180deg, #CBC9C9 0%, rgba(176, 165, 165, 0) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+mix-blend-mode: overlay;
+text-align:center;
+}
+.theme2 .bnrtxt{
+	position: absolute;
+top: 0;
+width: 100%;
+padding-top: 1%;
+	/*display:none;*/
+}
+
+
+.theme2 .are-bg-left{
+        position: absolute;
+        background: url(../images/about-bg.png) no-repeat;
+        left: 0;
+        top: -10%;
+        display: inline-block;
+        width: 100%;
+        background-position: left;
+        height: 100%;
+        background-size: contain;
+        z-index: -1;
+    }
+.theme2 .are-bg-right{
+        position: absolute;
+        background: url(../images/about-right.png) no-repeat;
+        right: 0;
+        top: 20%;
+        display: inline-block;
+        width: 100%;
+        background-position: right bottom;
+        height: 100%;
+        background-size: contain;
+        z-index: -1;
+    }
+.introtoptxt {
+    /* gap: 50px; */
+    margin-bottom: 20px;
+}
+.vlft {
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+	margin-bottom: 20px;
+}
+.tpctright{
+	/*flex:1;*/
+}
+.intrtitle{
+	font-weight: 500;
+font-size: 18px;
+line-height: 19px;
+color: #1A3A96;
+margin-bottom: 30px;
+}
+.viddiv{
+	position:relative;
+}
+#vidcvr{
+	position:absolute;
+	top:-2px;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+.viddiv img{
+	border-radius: 20px;
+	/*mix-blend-mode: hard-light;*/
+}
+.inttxt{
+	font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 50px;
+}
+.rankingdiv{
+	margin-bottom: 70px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rnkgbox {
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-right: 20px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.rnkgbox img{
+	width:auto;
+}
+.rnkgbox.box1{
+	background: rgba(177, 188, 219, 0.17);
+}
+
+.rnkgbox h5 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    color: #000;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.rnkgbox p{
+	font-weight: 600;
+font-size: 16px;
+line-height: 25px;
+color:#000;
+}
+.rnkgbox p span{
+	font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+color:#121A31;
+}
+.rnkgbox.box2{
+	background: rgba(202, 237, 216, 0.39);
+}
+.rnkgbox.box3{
+	background: rgba(255, 198, 198, 0.31);
+}
+.rnkgbox.box4{
+	background: rgb(249, 224, 49, 0.31);
+}
+.rnkgbox.box5{
+	background: rgba(205, 211, 119, 0.31);
+}
+.benefitssect{
+	padding-top:90px;
+	/*margin-top: 160px;*/
+}
+
+
+.benefitssect .bntitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-left h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #CCEDFF;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-head ul li.active a {
+  color: #CCEDFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-head ul{
+	border-bottom: 1px solid #385FD1;
+}
+/*.benefitssect.ontario-details .are-tab-main .are-tab-head ul li{
+	border-bottom: 1px solid #385FD1;
+}*/
+.benefitssect.ontario-details .are-tab-main .are-tab-head ul li.active{
+	border-bottom: 1px solid #CCEDFF;
+	height:100%;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-left ul li{
+	margin-bottom:30px;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-right .ontario-img-brd .ontario-image-box {
+    width: 100%;
+    height: 71%;
+}
+
+.supportservicesect{
+	background:#010402;
+	padding:50px 0;
+	position: relative;
+	padding-top: 80px;
+}
+.supportservicehead h3 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+    color: #009FF7;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.introsect {
+    padding-top: 50px;
+    position: relative;
+}
+.ssrtable img {
+    width: 67px;
+    margin-right: 0;
+}
+.ssrvtxt{
+	color:#fff;
+	font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+}
+.ssrvtxt p{
+	margin-bottom: 30px;
+}
+
+.theme2 .supportservicesect .are-bg-left{
+        position: absolute;
+        background: url(../images/theme2/ssrtbg.png) no-repeat;
+        left: 0;
+        top: 10%;
+        display: inline-block;
+        width: 100%;
+        background-position: left;
+        height: 70%;
+        background-size: contain;
+        z-index: 1;
+    }
+.theme2 .supportservicesect .are-bg-right{
+        position: absolute;
+        background: url(../images/theme2/ssrtbgright.png) no-repeat;
+        right: 0;
+        top: 20%;
+        display: inline-block;
+        width: 100%;
+        background-position: right bottom;
+        height: 70%;
+        background-size: contain;
+        z-index: 1;
+    }
+.supportservicecnt{
+	position:relative;
+	z-index:2;
+	margin-bottom: 50px;
+}	
+.supportservicevid{
+	position:relative;
+	z-index:2;
+	margin-top:30px;
+}
+
+.keysectorssect{
+	padding:50px 0;
+	position: relative;
+	color:#000;
+}
+
+.kstitle {
+    color: #121A31;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+.keysectorssect p{
+	color:#000;
+	font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+width:85%;
+margin:0 auto;
+margin-bottom:20px;
+}
+.ksbox{
+	height: 100%;
+border: 1px solid #E0E0E0;
+border-radius: 30px;
+}
+.ksbox img{
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+}
+/*.ksdet{
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}*/
+.ksdet{
+	padding:20px;
+	margin-top: -6px;
+	text-align:left;
+}
+.ksdet p{
+	margin-bottom:0;
+	color:#000;
+	font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+width: 100%;
+}
+.keysectorsdts{
+	justify-content: center;
+	width: 95%;
+margin: 0 auto;
+}
+.keysectorsdts .col-md-3{
+	margin-bottom:40px;
+}
+.keysectorstxt{
+	margin-bottom:30px;
+}
+
+.accessmarketsect{
+	position:relative;
+}
+.accessmarketsect .bnrtxt{
+	color:#fff;
+}
+.accessmarketsect .bnrtxt h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.lne{
+	height:1px;
+	background:#fff;
+	width:100%;
+}
+.dvhd {
+    display: block;
+    margin-bottom: 30px;
+}
+.dvhd img{
+width:80px;
+}
+.dvhd h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000;
+    width: 100%;
+}
+.dvcnt p{
+	font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color:#000;
+margin-bottom:30px;
+}
+.dvcnt a{
+	color:#21B85E;
+}
+.dvcnt a:hover{
+	text-decoration:underline;
+}
+.whtecnt{
+	padding:50px 0;
+	background:#fff;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.dvbox {
+    padding: 20px;
+}
+.accsscnt {
+    margin-top: -50px;
+    position: relative;
+}
+.whtecnt .col-md-6:first-child{
+	padding-right:0;
+}
+.whtecnt .col-md-6:last-child{
+	padding-left:0;
+}
+.bnrsct .bnrtxt {
+    top: 0;
+}
+
+.ssrvvid{
+	position:relative;
+}
+#vid2cvr{
+	position:absolute;
+	top:-2px;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+.ssrvvid{
+		height:250px;
+	}
+.theme2 .inner-banner {
+  padding-bottom: 0;
+}
+.rankingdiv .col-md-4{
+	margin-bottom:20px;
+}
+@media (min-width: 768px){
+	.ssrvvid{
+		height:650px;
+	}
+.col-md-1 {
+  flex: 0 0 auto;
+  width: 8.3333333333%;
+}
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+.col-md-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+.col-md-5 {
+  flex: 0 0 auto;
+  width: 41.6666666667%;
+}
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-md-7 {
+  flex: 0 0 auto;
+  width: 58.3333333333%;
+}
+.col-md-8 {
+  flex: 0 0 auto;
+  width: 66.6666666667%;
+}
+.col-md-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+.col-md-10 {
+  flex: 0 0 auto;
+  width: 83.3333333333%;
+}
+.col-md-11 {
+  flex: 0 0 auto;
+  width: 91.6666666667%;
+}
+.col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+
+.inttxt p{
+	width: 80%;
+margin: 0 auto;
+}
+.theme2 .in-banner-img h1{
+	font-weight: 900;
+font-size: 210px;
+line-height: 235px;
+background: linear-gradient(180deg, #CBC9C9 0%, rgba(176, 165, 165, 0) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+mix-blend-mode: overlay;
+}
+.introsect{
+	padding-top:100px;
+	position: relative;
+}
+.vlft{
+	padding-right: 50px;
+	font-weight: 400;
+font-size: 25px;
+line-height: 39px;
+color: #000000;
+margin-bottom: 0;
+}
+.introtoptxt{
+/*	display: flex;
+flex-direction: row;*/
+/*gap: 50px;*/
+margin-bottom: 50px;
+}
+.rnkgbox{
+	border-radius: 20px;
+	padding:30px 20px;
+	padding-right: 50px;
+	height: 100%;
+}
+.rnkgbox h5{
+	font-weight: 600;
+font-size: 30px;
+line-height: 39px;
+color:#000;
+margin-bottom: 20px;
+/*width: 55%;*/
+}
+.benefitssect .bntitle{
+	font-weight: 500;
+font-size: 50px;
+line-height: 55px;
+color:#fff;
+margin-bottom:50px;
+}
+.supportservicehead h3{
+	font-weight: 500;
+font-size: 50px;
+line-height: 65px;
+color:#009FF7;
+width: 440px;
+margin-bottom: 80px;
+}
+.ssrtable img{
+	width:67px;
+	margin-right:40px;
+}
+.kstitle{
+	color:#121A31;
+	font-weight: 500;
+font-size: 50px;
+line-height: 65px;
+margin-bottom:40px;
+}
+.accsscnt{
+	margin-top:-300px;
+	background: url(../images/theme2/wbg.jpg) no-repeat;
+	position: relative;
+	background-size: 60%;
+}
+.dvhd{
+	display: flex;
+gap: 50px;
+margin-bottom:30px;
+}
+.dvbox{
+	padding:50px;
+}
+.dvhd h3{
+	font-weight: 600;
+font-size: 38px;
+line-height: 53px;
+color:#000;
+width: 250px;
+}
+.accessmarketsect .bnrtxt h3{
+	font-weight: 500;
+font-size: 60px;
+line-height: 78px;
+width: 500px;
+margin-bottom: 40px;
+}
+.bnrsct .bnrtxt{
+	top:5%;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-right .ontario-img-brd .ontario-image-box{
+	width: 71%;
+height: 71%;
+}
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-left h2{
+	font-weight: 500;
+font-size: 25px;
+line-height: 35px;
+color:#CCEDFF;
+}
+.benefitssect .bntitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.ssrvimg img{
+	max-width:90%;
+}
+}
+
+@media (max-width: 640px){
+.benefitssect.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list {
+    position: relative;
+    flex-direction: column-reverse;
+    margin-top: 87px;
+    gap: 11px;
+}
+}
+
+.theme2 .inner-banner .bnrtxt{
+	display:none;
+}
+.ontario-details .are-tab-main .are-tab-head ul {
+    height: auto;
+}
+.ontario-details .are-tab-main .are-tab-head ul li a {
+    font-size: 14px;
+    line-height: 20px;
+}
+.ontario-details .are-tab-main .are-tab-head ul li.active a {
+    font-size: 18px;
+}
+.ontario-details .are-tab-main h2.bntitle{
+	color:#fff;
+	margin-bottom: 50px;
+    margin-top: 30px;
+	font-size: 50px;
+font weight: 500;
+}
+
+.only-pc{
+		display:block;
+	}
+	.only-mobile{
+		display:none;
+	}
+	.bay.theme2 #menu-item-2{
+		/*display:none;*/
+	}
+	.bay.theme2 .ontario-details .are-tab-main .are-tab-head ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-left h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+@media (max-width: 767px){
+	.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-right .ontario-img-brd .ontario-image-box img {
+  margin-top: 30px;
+}
+	.ontario-details .are-tab-main .are-tab-content .tab-content-txts .content-list .ontario-left h2 {
+  font-size: 23px;
+  line-height: 34px;
+}
+.bay.theme2 .ontario-details .are-tab-main .are-tab-head ul {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: -webkit-inline-box;
+  width: 100%;
+}
+	.only-pc{
+		display:none;
+	}
+	.only-mobile{
+		display:block;
+	}
+	.ontario-details .are-tab-main h2.bntitle{
+	font-size: 30px;
+font weight: 500;
+}
+.inner-banner .in-banner-img img {
+    min-height: auto !important;
+	height: auto !important
+}
+}

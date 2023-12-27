@@ -1,0 +1,772 @@
+function chooselookingfor(type){
+
+  if (type==1){
+
+    $('#inter').prop('checked', true);
+
+    $('#inter1').prop('checked', true);
+
+  }
+
+  else if (type==2){
+
+    $('#domstk').prop('checked', true);
+
+    $('#domstk1').prop('checked', true);
+
+  }
+
+}
+
+	$(window).on( "load", function() {
+
+			var hash = window.location.hash;
+
+			if(hash=="#communityprofile"){
+
+			$('.are-tab-head ul li').removeClass('active');
+
+			$('#ontariodet .are-tab-head ul > li:last-child').addClass('active');
+
+			$('.tab-content-txts').hide();
+
+			$('.tab-content-txts#profiles').show();
+
+			}
+
+		});
+
+$(window).resize(function(){ 
+
+  $("p, span, h6").css("font-size", "");
+
+$(".banner-subtext, h2, .stage-process li, label").css( "font-size", "" );
+
+});
+
+
+
+function getSize() {
+
+  size = $("h1").css( "font-size");
+
+  size = parseInt(size, 10);
+
+}
+
+
+
+//get inital font size
+
+getSize();
+
+
+
+$("#bigger").on( "click", function() {
+
+  var bannerrFont = $(".banner-titles").css( "font-size" );
+
+  bannerrFont = parseInt(bannerrFont, 10);
+
+
+
+  var otherssize = $("p").css( "font-size" );
+
+  otherssize = parseInt(otherssize, 10);
+
+
+
+  if ((bannerrFont + 2) <= 35) {
+
+    $(".banner-subtext, h2").css( "font-size", "+=2" );
+
+  }
+
+  
+
+  if((otherssize + 2) <= 24 )
+
+  {
+
+    $("p, span, h6, h3, .stage-process li, label").css( "font-size", "+=2" );
+
+  }
+
+
+
+});
+
+$( "#smaller" ).on( "click", function() {
+
+
+
+  var bannerrFont = $(".banner-titles").css( "font-size" );
+
+  bannerrFont = parseInt(bannerrFont, 10);
+
+
+
+  var otherssize = $("p").css( "font-size" );
+
+  otherssize = parseInt(otherssize, 10);
+
+
+
+
+
+  if ((bannerrFont + 2) >= 22) {
+
+    $(".banner-titles").css( "font-size", "-=2" );
+
+  }
+
+  
+
+  if((otherssize - 2) >= 14 )
+
+  {
+
+    $("p, span, h6, .stage-process li, label").css( "font-size", "-=2" );
+
+    $(".banner-subtext, h2").css( "font-size", "-=2" );
+
+  }
+
+
+
+});
+
+
+
+$( "#normal" ).on( "click", function() {
+
+  $("p, span, h6").css("font-size", "");
+
+  $(".banner-subtext, h2, .stage-process li, label").css( "font-size", "" );
+
+
+
+});
+
+
+
+function showDiv(type)
+
+{
+
+  if(type == 1)
+
+  {
+
+    $("#internationalDiv").addClass("you-select");
+
+    $("#DomesticDiv").removeClass("you-select");
+
+    $("#Domestic").css('style')
+
+  }
+
+  else if(type == 2){
+
+    $("#DomesticDiv").addClass("you-select");
+
+    $("#internationalDiv").removeClass("you-select");
+
+    $("#Domestic").css("display","block");
+
+    $("#international").css("display","none");
+
+  }
+
+}
+
+
+
+function showDiv(type)
+
+{
+
+  if(type == 1)
+
+  {
+
+    $("#interstage").addClass("you-select");
+
+    $("#domstage").removeClass("you-select");
+
+    $("#Domestic").css('style')
+
+  }
+
+  else if(type == 2){
+
+    $("#domstage").addClass("you-select");
+
+    $("#interstage").removeClass("you-select");
+
+    $("#Domestic").css("display","block");
+
+    $("#international").css("display","none");
+
+  }
+
+}
+
+
+
+$(document).ready(function(){
+
+
+
+    if ($(window).width() < 768) {
+
+      $(".owl-carousel").owlCarousel({        
+
+        items:2.5,
+
+        nav:false,
+
+        loop:true,
+
+        autoplay:true,
+
+        smartSpeed: 1000,
+
+        autoplayTimeout:5000,
+
+        margin:43,
+
+        responsiveClass:true,
+
+        responsive:{
+
+          0:{
+
+            items:1
+
+          },
+
+          576:{
+
+            items:2.5
+
+          }
+
+        }       
+
+    });
+
+   }
+
+
+
+var slider = document.getElementById("range-slider__range");
+
+var output = document.getElementById("range-slider__value");
+
+
+
+output.innerHTML = slider.value;
+
+
+
+// This function input current value in span and add progress colour in range
+
+slider.oninput = function() {
+
+
+
+  output.innerHTML = this.value;
+
+
+
+  var value = (this.value-this.min)/(this.max-this.min)* 100;
+
+  
+
+  this.style.background = 'linear-gradient(to right, #004AC1 0%, #004AC1 ' + value + '%, #fff ' + value + '%, #fff 100%)'
+
+}
+
+
+
+  });
+
+
+
+  $(window).on("resize", function () {
+
+		if ($(window).width() > 767) {
+
+      $(".owl-carousel").owlCarousel({        
+
+        items:2.5,
+
+        nav:false,
+
+        loop:true,
+
+        autoplay:true,
+
+        // autoHeight:false,
+
+        smartSpeed: 1000,
+
+        autoplayTimeout:5000,
+
+     
+
+        
+
+    });
+
+		}
+
+	});
+
+
+
+  function setOwlStageHeight(event) {
+
+    var maxHeight = 0;
+
+    $('.owl-item.active').each(function () { // LOOP THROUGH ACTIVE ITEMS
+
+        var thisHeight = parseInt( $(this).height() );
+
+        maxHeight=(maxHeight>=thisHeight?maxHeight:thisHeight);
+
+    });
+
+    $('.owl-carousel').css('height', '100%' );
+
+    $('.owl-stage-outer').css('height', '100%' ); // CORRECT DRAG-AREA SO BUTTONS ARE CLICKABLE
+
+}
+
+
+
+const navbar = document.getElementById('header')
+
+
+
+// OnScroll event handler- header
+
+const onScroll = () => {
+
+  const scroll = document.documentElement.scrollTop
+
+  if (scroll > 600) {
+
+    navbar.classList.add("scrolled");
+
+  } else {
+
+    navbar.classList.remove("scrolled")
+
+  }
+
+}
+
+
+
+window.addEventListener('scroll', onScroll)
+
+
+
+
+
+//tab for help section
+
+
+
+$('.help-tab-head a').on('click', function(e) {
+
+  var currentAttrValue = jQuery(this).attr('href');
+
+
+
+  $('.help-tab-content ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+  $(this).parent('div').addClass('selected').siblings().removeClass('selected');
+
+
+
+  e.preventDefault();
+
+});
+
+
+
+
+
+//tab for help media
+
+
+
+$('.media-links a').on('click', function(e) {
+
+  var currentAttrValue = jQuery(this).attr('href');
+
+  $('.media-contents ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+  $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+
+
+  e.preventDefault();
+
+});
+
+
+
+
+
+//collapse section
+
+
+
+$('.toggle-contents').click(function(){
+
+  $('.toggle-texts ').slideUp(400);
+
+  $(this).addClass('open').siblings().removeClass('open');
+
+  $('.open .toggle-texts ').slideDown(400);
+
+  
+
+})
+
+
+
+$('.hamburger').click(function(){
+
+  
+
+  $('nav').addClass('open').siblings().removeClass('open');
+
+  $('nav.open').slideDown(400);
+
+  
+
+});
+
+
+
+$('nav .close').click(function(){
+
+  $('nav').slideUp(400);
+
+});
+
+
+
+// language
+
+$('.language').click(function(){
+
+  
+
+  if($(".language-list").css("display") == "block")
+
+  {
+
+    $('.language-list').slideUp(400);
+
+  }
+
+  else if($(".language-list").css("display") == "none")
+
+  {
+
+    $('.language-list').slideDown(400);
+
+  }
+
+  
+
+});
+
+
+
+$(document).on('click', 'section', function () {
+
+  
+
+  $('.language-list').slideUp(400); 
+
+});
+
+
+
+var cards = document.querySelectorAll('.business-form');
+
+
+
+[...cards].forEach((card)=>{
+
+  $('.form-btn').on( 'click', function() {
+
+    card.classList.toggle('is-flipped');
+
+  });
+
+});
+
+
+
+$('.toggle-contents-faq').click(function(){
+
+  $('.toggle-texts-faq').slideUp(400);
+
+  $(this).addClass('open').siblings().removeClass('open');
+
+  $('.open .toggle-texts-faq ').slideDown(400);
+
+})
+
+
+
+$('.are-you-box').on('click', function(e) {
+
+  var currentAttrValue = jQuery(this).attr('href');
+
+  $('.are-you-content ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+  $(this).addClass('you-select').siblings().removeClass('you-select');
+
+
+
+  e.preventDefault();
+
+});
+
+
+
+// about us page toggle
+
+
+
+  $('.are-tab-head ul li').click(function(){
+
+    $('.are-tab-head ul li').removeClass('active');
+
+    // var thisclass=$(this).attr('href');
+
+    $(this).addClass('active');
+
+  });
+
+  $('.are-tab-head ul li a').on('click', function(e) {
+
+    var currentAttrValue = jQuery(this).attr('href');
+
+
+
+    $('.are-tab-content ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+
+    $(this).parent('div').addClass('selected').siblings().removeClass('selected');
+
+
+
+    e.preventDefault();
+
+  });
+
+
+$("#vidcvr").on( "click", function() {
+	$(this).hide();
+	var symbol = $("#vid1")[0].src.indexOf("?") > -1 ? "&" : "?";
+  $("#vid1")[0].src += symbol + "autoplay=1";
+	});
+	
+	$("#vid2cvr").on( "click", function() {
+	$(this).hide();
+	var symbol = $("#vid2")[0].src.indexOf("?") > -1 ? "&" : "?";
+  $("#vid2")[0].src += symbol + "autoplay=1";
+	});
+
+
+// slider script
+
+//  import Swiper from " https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+
+
+gotoTop();
+
+function gotoTop(){
+
+
+
+  window.scroll({
+
+    top: 0, 
+
+    left: 0, 
+
+    behavior: 'smooth'
+
+  });
+
+
+
+ }
+
+
+
+  const swiper = new Swiper('.swiper1', {
+
+    direction: 'horizontal',
+
+    loop: true,
+
+    spaceBetween: 1,
+
+    centeredSlides: true,
+
+    Draggable:false,
+
+    slidesPerView: 3,   
+
+    breakpoints: {
+
+      499: {
+
+          slidesPerView: 1,
+
+          spaceBetweenSlides: 30,
+
+          touchRatio: 1,
+
+          slideToClickedSlide: false,          
+
+      },
+
+      999: {
+
+          slidesPerView: 1,
+
+          spaceBetweenSlides: 40
+
+      }
+
+  },
+
+    autoplay:false,
+
+    navigation: {
+
+      nextEl: '.swiper-button-next',
+
+      prevEl: '.swiper-button-prev',
+
+    }
+
+},
+
+)
+
+
+
+function sliderSwitch(){
+
+  var element = document.getElementById("first-switch");
+
+  var element1 = document.getElementById("second-switch");
+
+  var slider1=document.getElementById("slider1");
+
+  var slider2=document.getElementById("slider2");
+
+  if((element.classList.contains("active")) && (slider2.classList.contains("hidden"))){    
+
+    element.classList.remove("active");
+
+    element1.classList.add("active");
+
+    slider1.classList.add("hidden");
+
+    slider2.classList.remove("hidden");
+
+    
+
+    const swiper1 = new Swiper('.swiper2', {
+
+      direction: 'horizontal',
+
+      loop: true,
+
+      spaceBetween: 1,
+
+      centeredSlides: true,
+
+      Draggable:false,
+
+      slidesPerView: 3,
+
+     
+
+      slideToClickedSlide: true,
+
+      breakpoints: {
+
+        499: {
+
+            slidesPerView: 1,
+
+            spaceBetweenSlides: 30,
+
+            touchRatio: 1,
+
+            slideToClickedSlide: false,            
+
+        },
+
+        999: {
+
+            slidesPerView: 1,
+
+            spaceBetweenSlides: 40
+
+        }
+
+    },
+
+      autoplay:false,
+
+      navigation: {
+
+        nextEl: '.swiper-button-next',
+
+        prevEl: '.swiper-button-prev',
+
+      }
+
+  },
+
+    )
+
+    swiper1.update();
+
+  }
+
+  else{
+
+    element.classList.add("active");
+
+    element1.classList.remove("active");
+
+    slider1.classList.remove("hidden");
+
+    slider2.classList.add("hidden"); 
+
+    swiper.update();
+
+  }
+
+
+
+}
+
