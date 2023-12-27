@@ -1,0 +1,250 @@
+/** @format */
+
+.footer-section3 .faq-banner-btn {
+  background: #fff;
+}
+.footer-section3 .faq-banner-btn:hover {
+  background: #d0d0d7;
+}
+
+.main .footer-section2 .faq-banner-btn {
+  background: #fff;
+}
+.main .footer-section2 .faq-banner-btn:hover {
+  background: #d0d0d7;
+}
+.main header .top-nav nav ul li.current-menu-item > a::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+/*.advisor-icon a{
+	border-radius:70px;
+}
+.advisor-icon a:hover{
+	background:#999 !important;
+	color:#fff !important;
+}
+.advisor-icon a:hover span{
+color:#fff !important;
+}*/
+
+.main .question-section .toggle-section-faq .toggle-contents-faq .toggle-texts-faq p a {
+  color: #00a4ff !important;
+}
+
+.advisor-icon {
+  display: inline-block;
+}
+.advisor-icon a {
+  display: inline-flex;
+  position: relative;
+}
+.advisor-icon a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 0px #000;
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  border-radius: 70px;
+}
+.advisor-icon a span {
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+}
+.advisor-icon svg {
+  width: 33px;
+  position: relative;
+  z-index: 11;
+}
+.advisor-icon a:hover {
+  border-color: #000;
+}
+.advisor-icon a:hover::after {
+  box-shadow: inset 300px 0px 0px #000;
+}
+.advisor-icon a:hover span {
+  color: #fff;
+}
+.advisor-icon a:hover svg {
+  fill: #fff;
+}
+
+.are-you .are-you-in .are-you-content .are-select .are-tab-main .are-tab-content .tab-content-txts p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 29px;
+  margin-top: 16px;
+  display: block;
+  margin-bottom: 20px;
+}
+.prdiv p {
+  margin: 0 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+/* .eligibility .are-you.eligible .are-you-in {
+  font-size: 15px;
+line-height: 24px;
+}*/
+.eligibility .are-you-in .are-you-tabbox .are-you-box#stage_2 .are-box-in .are-in-content .stage-process li {
+  font-size: 15px !important ;
+  line-height: 24px !important;
+}
+
+.faq-button {
+  display: inline-block;
+}
+.faq-button a {
+  display: inline-flex;
+  position: relative;
+}
+.faq-button a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 0px #000;
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  border-radius: 70px;
+}
+.faq-button a span {
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+}
+.faq-button svg {
+  width: 33px;
+  position: relative;
+  z-index: 11;
+}
+.faq-button a:hover {
+  border-color: #000;
+}
+.faq-button a:hover::after {
+  box-shadow: inset 300px 0px 0px #000;
+}
+.faq-button a:hover span {
+  color: #fff !important;
+}
+.faq-button a:hover svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+.ontario-details
+  .are-tab-main
+  .are-tab-content
+  .tab-content-txts
+  .content-list
+  .ontario-left
+  .scroll
+  .question-section
+  .toggle-section-faq
+  .toggle-contents-faq
+  .question-toggle
+  .toggle-title-faq {
+  font-size: 18px !important;
+}
+.swiper-slide:nth-child(8) .swiper-image .image .slider-content {
+  font-size: 20px !important;
+}
+.main .slider-section .slider-main .swiper .swiper-wrapper .swiper-slide:nth-child(5) .swiper-image .image .slider-content {
+  font-size: 20px !important;
+}
+
+.services .swiper-slide:nth-child(8) .swiper-image .image .slider-content {
+  font-size: 14px !important;
+}
+
+.eligibility .inner-banner .in-banner-content .banner-in .right-side {
+  height: auto;
+  margin-bottom: 0;
+}
+.eligibility
+  .are-you-in
+  .are-you-content
+  .are-select
+  .are-tab-main
+  .are-tab-content
+  .tab-content-txts
+  section.question-section
+  .toggle-section-faq
+  .toggle-contents-faq
+  p {
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+.main .key-benefits-section .key-benefits-main .are-tab-content .tab-content-txts .content-list ol li {
+  min-height: auto !important;
+  margin-bottom: 15px;
+}
+
+.french .h1-titles {
+  font-size: 52px;
+  line-height: 53px;
+  font-weight: 500;
+}
+.french .helps .help-tab-head .entre-tabs:nth-child(2) {
+  line-height: 23px !important;
+}
+.french .are-you-box.you-select {
+  color: #fff;
+}
+.eligibility .are-you-in .are-you-tabbox .are-you-box .are-box-in .are-in-content ul.stage-process {
+  margin-top: 20px !important;
+}
+.top-nav .sub-menu {
+  position: absolute;
+  left: 0;
+  min-width: 150px;
+  display: none;
+  background: #fff;
+  /*padding-bottom:10px;*/
+}
+.main header .top-nav nav ul li {
+  position: relative;
+}
+.main header .top-nav nav ul > li > ul {
+  display: none !important;
+}
+.main header .top-nav nav ul > li:hover > ul {
+  display: block !important;
+}
+.top-nav .sub-menu > li {
+  width: 100%;
+  padding-left: 0 !important;
+}
+.top-nav .sub-menu > li a {
+  display: block;
+  padding-left: 25px !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.top-nav .sub-menu > li:hover {
+  background: #009ff7;
+  transition: none;
+}
+.top-nav .sub-menu > li:hover a::after {
+  transform: none;
+  transition: 0;
+}
+.top-nav .sub-menu > li:hover a {
+  color: #fff;
+  border: 0 !important;
+}
+@media (max-width: 767px) {
+  .top-nav .sub-menu {
+    position: relative;
+    background: #000;
+  }
+}
+@media (min-width: 768px) {
+  .french #domestic .are-in-image {
+    width: 80%;
+  }
+}
+

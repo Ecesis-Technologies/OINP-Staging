@@ -1,0 +1,543 @@
+# Copyright (C) 2023 WPGlobus Plus
+# This file is distributed under the same license as the WPGlobus Plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPGlobus Plus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: %1$s - plugin name (eg ACF); %2$s - plugin version (eg 1.2.3).
+msgctxt "List of modules"
+msgid "To use this module, you need to install and activate the %1$s plugin version %2$s or later."
+msgstr ""
+
+msgctxt "List of modules"
+msgid "ACF Plus"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields: %1sWYSIWYG Field%2s"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields: %1sTable Field%2s"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual Advanced Custom Fields PRO: %1sOptions&Settings%2s"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Publish"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Publish only the completed translations"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Taxonomies"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual Taxonomies and CPTs"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Current PHP version"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "WPGlobus requires PHP version 5.6 or higher to use the Taxonomies module."
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Slug"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Translate post/page URLs"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Switcher Menu"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Customize the Language Switcher Menu layout"
+msgstr ""
+
+msgid "Option"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Menu Settings"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Associate different menus with different languages"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Editor"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Universal Multilingual Editor"
+msgstr ""
+
+#. translators: %1s is PHP version.
+msgid "For this module to work correctly, PHP version %1s or newer is required."
+msgstr ""
+
+msgctxt "List of modules"
+msgid "TinyMCE"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "WYSIWYG Editor"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "TablePress"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual TablePress"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Yoast SEO Plus"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Multilingual Focus Keywords and Page Analysis"
+msgstr ""
+
+msgctxt "List of modules"
+msgid "Yoast SEO Premium support is in %1sBeta stage%2s"
+msgstr ""
+
+msgid "Load the page in the %sBuilder mode%s to work with a multilingual table."
+msgstr ""
+
+msgid "This table already has multilingual data. To preserve it, reload the page in the %sBuilder mode%s."
+msgstr ""
+
+msgid "This field `table` is not multilingual."
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+#. translators: placeholders for 'id', 'name'
+msgid "%1$s or %2$s of the HTML element"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+#. translators: %1 - id, %2 - name, %3 - Page.
+msgid "To find the element's %1$s or %2$s, inspect it in the browser console on the page specified in the parameter %3$s of the table."
+msgstr ""
+
+msgid "Usually, it is the Post Edit page (post.php) or the Settings page."
+msgstr ""
+
+#. translators: %1 - wpml-config.xml.
+msgid "If your active theme has a configuration file %1$s and has some fields in the admin area that you need to translate, then you can get hints from that file."
+msgstr ""
+
+#. translators: %1 - admin-texts, %2 - custom-fields.
+msgid "Look for the %1$s and %2$s sections in the configuration file "
+msgstr ""
+
+#. translators: %1 - WPGlobus, %2 - URL.
+msgid "on the %1$s settings page, use %2$sthis link%3$s to view the configuration file if your theme has it."
+msgstr ""
+
+msgid "The elements displayed are for"
+msgstr ""
+
+msgid "Select a page"
+msgstr ""
+
+msgid "All pages"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "WPGlobus Menu Settings"
+msgstr ""
+
+msgid "Your theme does not natively support menus or does not register any Theme Location."
+msgstr ""
+
+msgid "You need to assign a menu for this Theme Location."
+msgstr ""
+
+msgid "With WPGlobus Plus, you can associate different menus with each language. Choose which menu should be displayed at this Theme Location - by clicking on the table cells."
+msgstr ""
+
+msgid "Click to select"
+msgstr ""
+
+msgid "Language Selector Menu Style"
+msgstr ""
+
+msgid "Drop-down languages menu or Flat (in one line)"
+msgstr ""
+
+msgid "Do not change"
+msgstr ""
+
+msgid "Drop-down (vertical)"
+msgstr ""
+
+msgid "Flat (horizontal)"
+msgstr ""
+
+msgid "Taxonomies"
+msgstr ""
+
+msgid "Module couldn't find file '%1$s'. Please contact with us using %2$sWPGlobus Help Desk%3$s"
+msgstr ""
+
+msgid "The Post Types and Taxonomies"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Rewrite rules"
+msgstr ""
+
+msgid "Multilingual slug"
+msgstr ""
+
+msgid "Key: %s"
+msgstr ""
+
+msgid "Not found in the options table."
+msgstr ""
+
+msgid "Debug Mode"
+msgstr ""
+
+msgid "Taxonomy"
+msgstr ""
+
+msgid "Post type"
+msgstr ""
+
+msgid "%s slug"
+msgstr ""
+
+msgid "Post Type label:"
+msgstr ""
+
+msgid "Post Type name:"
+msgstr ""
+
+msgid "To edit the slug for the default language, please use the Custom Rewrite Slug parameter in the settings of the plugin that created this Custom Post Type."
+msgstr ""
+
+msgid "To edit the slug for &#8220;%s&#8221 in the default language, please visit the Settings->Permalinks page."
+msgstr ""
+
+msgid "Terms of %s (%d items total) :"
+msgstr ""
+
+msgid "Hide empty terms."
+msgstr ""
+
+msgid "Attention!"
+msgstr ""
+
+msgid "You can rewrite the Taxonomy Module settings to make them matching %1$s."
+msgstr ""
+
+msgid "If you believe that the settings should be rewritten, click"
+msgstr ""
+
+msgid "%1$sRewrite Settings%2$s"
+msgstr ""
+
+msgid "Module options is empty."
+msgstr ""
+
+msgid "If TinyMCE: WYSIWYG Editor module is used on the \"post.php\" page then no additional settings are required. For other pages, however, we need to know, a click on which page element will save the TinyMCE content. For that, you have to specify the page and the name, id, or class of the element. We recommend using the name attribute."
+msgstr ""
+
+msgid "Such page element could be the same for several TinyMCE editors on the same page."
+msgstr ""
+
+#. translators: placeholders for 'name', 'id', 'class'
+msgid "%1$s, #%2$s, or .%3$s of the HTML element"
+msgstr ""
+
+msgid "You need to set name, #id or .class to save content."
+msgstr ""
+
+msgid "Click Red Globe to open TinyMCE settings page."
+msgstr ""
+
+msgid "Sitemap for"
+msgstr ""
+
+msgid "To use this module, you need to install and activate the Yoast SEO plugin version 2.3.4 or later."
+msgstr ""
+
+msgid "XML sitemaps that Yoast SEO generates are"
+msgstr ""
+
+msgctxt "yoastseo-settings"
+msgid "disabled"
+msgstr ""
+
+msgid "To enable, visit the %1$sYoast SEO Features page%2$s."
+msgstr ""
+
+msgctxt "yoastseo-settings"
+msgid "enabled"
+msgstr ""
+
+msgid "Languages status"
+msgstr ""
+
+msgid "No items found."
+msgstr ""
+
+msgid "Single Action"
+msgstr ""
+
+msgid "Single Post Action"
+msgstr ""
+
+msgid "WARNING: this operation is non-reversible. It is strongly recommended that you backup your database before proceeding."
+msgstr ""
+
+msgid "Set draft status"
+msgstr ""
+
+msgid "By default, when you publish a post, all languages get the \"published\" status. By using this tool, you can set specific language(s) to draft, for any post, page or custom post type."
+msgstr ""
+
+msgid "1. Select a language and the post type:"
+msgstr ""
+
+#. translators: drop-down menu prompt
+msgid "select a language"
+msgstr ""
+
+#. translators: drop-down menu prompt
+msgid "select a post type"
+msgstr ""
+
+msgid "2. Click the link below:"
+msgstr ""
+
+msgid "No post_id parameter."
+msgstr ""
+
+msgid "To change the language status for a specific post, on the edit page"
+msgstr ""
+
+msgid "in the %1$sPublish%2$s metabox, click the %1$sPost Action%2$s button (see the screenshot)"
+msgstr ""
+
+msgid "Incorrect post_id parameter."
+msgstr ""
+
+msgid "for post ID"
+msgstr ""
+
+msgid "By default, when you publish a post, all languages get the \"published\" status. By using this tool, you can set specific language(s) to draft, for the post by specifying `post_id`."
+msgstr ""
+
+msgid "Select all languages"
+msgstr ""
+
+msgid "Delete all languages"
+msgstr ""
+
+msgid "Start processing"
+msgstr ""
+
+msgid "This post is available in the main language (%s) only."
+msgstr ""
+
+msgid "This post has been marked as Draft."
+msgstr ""
+
+msgid "Please, visit later..."
+msgstr ""
+
+msgid "Set Draft"
+msgstr ""
+
+msgid "URL format"
+msgstr ""
+
+msgid "Unknown language"
+msgstr ""
+
+msgid "Disabled post type"
+msgstr ""
+
+msgid "Setting as \"draft\" all records with post type \"%1$s\" for language \"%2$s\""
+msgstr ""
+
+msgid "Already set to \"%s\". Not changing."
+msgstr ""
+
+msgid "Setting to Draft FAILED!"
+msgstr ""
+
+msgid "Successfully set to Draft"
+msgstr ""
+
+msgid "Done."
+msgstr ""
+
+msgid "No records found."
+msgstr ""
+
+msgid "Back to WPGlobus Plus"
+msgstr ""
+
+msgid "Post Action"
+msgstr ""
+
+msgid "Setting to \"%s\" FAILED!"
+msgstr ""
+
+msgid "Successfully set to \"%s\""
+msgstr ""
+
+msgid "Parameter `action` is incorrect."
+msgstr ""
+
+msgid "Parameter `action` was not set."
+msgstr ""
+
+msgid "Setting as \"draft\" for post ID \"%1$s\" for language(s) \"%2$s\""
+msgstr ""
+
+msgid "No record found."
+msgstr ""
+
+msgid "Empty array of languages."
+msgstr ""
+
+msgid "Updated."
+msgstr ""
+
+msgid "Plugin URI"
+msgstr ""
+
+#. translators: %1$s, %2$s are placeholders for the A tag.
+msgid "go to the %1$sEditor Settings%2$s page"
+msgstr ""
+
+#. translators: %1$s, %2$s are placeholders for non-translatable texts.
+msgid "add the %2$s and %3$s element names for the %1$s Page - see the screenshot below:"
+msgstr ""
+
+msgid "WPGlobus Plus supports multilingual Author Boxes"
+msgstr ""
+
+msgid "To enable multilingual editing on the Edit User pages, you need to:"
+msgstr ""
+
+msgid "No configuration is required."
+msgstr ""
+
+msgid "Сompatibility Plus"
+msgstr ""
+
+msgid "Go to WPGlobus Menu Settings page"
+msgstr ""
+
+msgid "Go to WPGlobus Plus Options page"
+msgstr ""
+
+msgid "WPGlobus Plus Options"
+msgstr ""
+
+msgid "WPGlobus Plus"
+msgstr ""
+
+msgctxt "Part of the WPGlobus Plus"
+msgid "Plus"
+msgstr ""
+
+msgid "Active Modules"
+msgstr ""
+
+msgid "Uncheck the modules you are not planning to use:"
+msgstr ""
+
+msgid "Please, activate module Publish"
+msgstr ""
+
+msgid "Please, activate module WPGlobus Editor"
+msgstr ""
+
+msgid "Please, activate module TinyMCE: WYSIWYG Editor"
+msgstr ""
+
+msgid "Please, activate module Taxonomies: Multilingual Taxonomies and CPTs"
+msgstr ""
+
+msgid "With the “Taxonomies” module, you will be able to translate slugs of the categories, tags, and terms, including those coming with Custom Post Types."
+msgstr ""
+
+msgid "This module is currently at a beta-testing stage. Please contact us for more details."
+msgstr ""
+
+msgid "Please, activate module Yoast SEO Plus: Multilingual Focus Keywords and Page Analysis"
+msgstr ""
+
+msgid "Modules"
+msgstr ""
+
+msgid "Editor Settings"
+msgstr ""
+
+msgid "TinyMCE Settings"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Yoast SEO Plus"
+msgstr ""
+
+msgid "https://wpglobus.com/product/wpglobus-plus/"
+msgstr ""
+
+msgid "Extend functionality of the <a href=\"https://wordpress.org/plugins/wpglobus/\">WPGlobus Multilingual Plugin</a>."
+msgstr ""
+
+msgid "WPGlobus"
+msgstr ""
+
+msgid "https://wpglobus.com/"
+msgstr ""
+
+#. translators: %1$s - this plugin name. %2$s - the required plugin name.
+msgid "The %1$s will not function unless the core plugin, %2$s, is activated."
+msgstr ""

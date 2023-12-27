@@ -1,0 +1,79 @@
+<?php 
+/**
+ * Langauage switcher
+ * @return String Swith language link
+ */
+function site_switch_language(){
+	if(class_exists('WPGlobus')){
+		global $post;
+		$sl = (WPGlobus::Config()->language=='en')?'fr':'en';
+		
+		if(isset($post->ID) AND !is_404()){
+			$url = get_permalink( $post->ID );
+		}else{
+			$url = site_url();
+		}
+		$link = esc_url( WPGlobus_Utils::localize_url($url,$sl) );
+		if($sl == 'fr'){
+			echo '<div><a href="'.$link.'">English</a></div><div><a href="'.$link.'">French</a></div>';
+		}else{
+			echo '<div><a href="#">French</a></div><div><a href="'.$link.'">English</a></div>';
+		}
+	}
+}
+
+/**
+ * Language attribute
+ * @return String
+ */
+function site_language_attributes(){
+	if(class_exists('WPGlobus')){
+		echo $attribute = (WPGlobus::Config()->language=='en')?'lang="en-US"':'lang="fr"';
+	}
+}
+
+/**
+ * Language attribute
+ * @return String
+ */
+function site_cuttent_language(){
+	if(class_exists('WPGlobus')){
+		echo $attribute = (WPGlobus::Config()->language=='en')?'English':'French';
+	}
+}
+
+/**
+ * language handle
+ * @return String post value or dafault value
+ */
+function _ol($key,$print=true){
+	if($print){
+		_e($key,'oinp');
+	}else{
+		return __($key,'oinp');
+	}
+}
+/**
+ * language handle
+ * @return String post value or dafault value
+ */
+function _el($key){
+	return __($key,'oinp');
+}
+/**
+ * Print active menu
+ * @param  String $slug Page Slug
+ * @return [type] [description]
+ */
+function site_getactivemenu($id,$checkparent=true) {
+    global $post;
+    if($checkparent){
+    	if (is_page( $id ) OR $post->post_parent == $id) {
+    	    echo 'active';
+    	}
+    }else{
+    	if (is_page( $id )) {
+    	    echo 'active';
+    	}
+    }
+}

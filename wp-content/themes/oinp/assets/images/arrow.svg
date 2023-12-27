@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 18" width="32" height="18">
+	<title>New Project</title>
+	<defs>
+		<image  width="32" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAMAAAANFixgAAAAAXNSR0IB2cksfwAAAMZQTFRFAAAA0dHRlJSUoaGhYWFhfX191dXV09PTdHR0ZmZmfHx80NDQc3Nzfn5+c3NzfHx82NjY2dnZZ2dnfHx8zs7Oenp6aWlpfn5+gICAcXFxY2NjkpKSpqamb29vampqfHx8gYGBcXFxcHBwbGxsjY2NgoKCcXFxcHBwcXFxaWlpcHBweHh4aGhomJiYAAAA////sLCwbW1tkZGR////urq6bW1tkJCQ////tra2tra2a2trkZGRt7e3j4+Pvb29paWlkpKSoqKi/F1TwwAAAEJ0Uk5TAAtYcv/WDBfr/80b7c3z1g0b/9MV0//LBBISDln//89J////pjvt7evt6+P/hgEBV/+ZAz/7mAJGQv+bQJkyZpYh32AuaAAAAJRJREFUeJx9jtcWgjAQBRcLGsEWFStBY8ESjRUU+///lL7wFu68zt05S2TEyllmkZIvFG04KJVZBTccl1Vxw6mxegMumi5v4Ua743X/f/T6GQyGI18ENo0n0owvplLyGc0XoYlluFpvpFRbol0GWu8P6ngCT54vPIqBvwoeaeBvCb+j+0fCnsi/PAb79FYf6Cn+pv4H2g8Y/0/4960AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer 1" href="#img1" x="0" y="0"/>
+</svg>
