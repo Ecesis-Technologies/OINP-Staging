@@ -1,0 +1,132 @@
+<?php
+
+/**
+
+ * The header for OINP.
+
+ *
+
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+
+ *
+
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+
+ *
+
+ * @package oinc
+
+ */
+
+?>
+
+<!DOCTYPE html>
+
+<html <?php site_language_attributes(); ?>>
+
+<head>
+
+<!--<link rel="icon" href="<?php echo get_template_directory_uri();?>/images/favicon.ico" />-->
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>OINP</title>
+
+ <link rel="shortcut icon" type="image/png" href="./<?php echo get_template_directory_uri(); ?>/assets/images/fav-icon.png"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" type="text/css">
+
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider.css" type="text/css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" type="text/css" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<?php wp_head(); ?>
+
+</head>
+
+<body class="<?php if (get_the_title() != 'Home'){ echo 'inner-pages ';} if (get_the_title() != 'Home' && get_the_title() != 'FAQs'){ echo ' about ';}  echo strtolower(get_the_title()); ?>">
+
+<div class="main" id="main">
+
+    <!-- template header -->
+
+    <header id="header">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <a href="<?php echo site_url(); ?>">
+
+                    <img src="<?php echo get_template_directory_uri();?>/assets/images/OINP-logo.png" alt="ONIP Logo">
+
+                </a>
+
+            </div>
+
+            <div class="top-nav">
+
+                <nav>
+
+                <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '','items_wrap' => '<ul>%3$s</ul>' ) ); ?>
+
+                    <span class="close"></span>
+
+                </nav>
+
+                <div class="hamburger">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+                <div class="language">
+
+                    <div class="lan-dis"><?php echo site_cuttent_language(); ?></div>
+
+                    <div class="language-list " style="display:none;">
+
+                    <?php site_switch_language(); ?>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="font-size">
+
+                    <div class="font-list">
+
+                        <div id="smaller">A</div>
+
+                        <div id="normal">A</div>
+
+                        <div id="bigger">A</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+

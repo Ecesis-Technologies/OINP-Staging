@@ -1,0 +1,313 @@
+<?php
+
+
+
+    /**
+
+     * Template part for displaying page content in page.php.
+
+     *
+
+     * @link https://codex.wordpress.org/Template_Hierarchy
+
+     *
+
+     * @package oinp
+
+     */
+
+
+
+    ?>
+
+    <?php if (have_rows('are_you')) :
+
+    while (have_rows('are_you')) : the_row();
+
+
+
+        if (have_rows('are_you_boxes')) :
+
+            $k = 0;
+
+            while (have_rows('are_you_boxes')) : the_row();
+
+                $tag = get_sub_field('tag');
+
+                $boxData[$k++] = array("tag" => get_sub_field('tag'), "title" => get_sub_field('title'), "description" => get_sub_field('description'), "cta_label" => get_sub_field('cta_label'), "icon" => get_sub_field('icon'), "active_icon" => get_sub_field('active_icon'), "image" => get_sub_field('image'));
+
+                $tab_selected_title[$tag] = get_sub_field('title');
+				$tab_selected_additional_text[$tag] = get_sub_field('additional_text');
+
+                if (have_rows('tab_items')) :
+
+                    while (have_rows('tab_items')) : the_row();
+
+                    $toggleData = [];
+
+                    $i = 0;
+
+                        if (have_rows('toggle_items')) :
+
+                            while (have_rows('toggle_items')) : the_row();
+
+                                $toggleData[$i++] = array("heading" => get_sub_field('heading'), "description" => get_sub_field('description'));
+
+                            endwhile;
+
+                        endif;
+
+                        $tab_tag = str_replace(' ', '-', strtolower(get_sub_field('heading')));
+
+                        $tab_head[$tag][$tab_tag] = get_sub_field('heading');
+
+                        $tab_body[$tag][$tab_tag] = array("title" => get_sub_field('title'), "description" => get_sub_field('description'), "toggle_items" => $toggleData);
+
+                    endwhile;
+
+                endif;
+
+            endwhile;
+
+        endif;
+
+?>
+
+        <section class="are-you <?php echo (get_sub_field('page') == 'Eligibility') ? 'eligible':''; ?>" id="<?php echo (get_sub_field('page') == 'Eligibility') ? 'sections':'areyou'; ?>">
+
+            <div class="are-bg-left"></div>
+
+            <div class="are-bg-right"></div>
+
+            <div class="container">
+
+                <span class="<?php echo (get_sub_field('page') == 'Eligibility')? 'eligibility-titile' : 'are-you-title'; ?>"><?php _ol(get_sub_field('title')); ?></span>
+
+                <?php if ($boxData) :
+//print_r($boxData);
+                ?>
+
+                    <div class="are-you-in">
+
+                        <div class="are-you-tabbox">
+
+                            <?php
+
+                            for ($j = 0; $j < sizeof($boxData); $j++) {
+
+                                $act_tag = $boxData[$j]['tag'];
+
+                            ?>
+
+                                <div class="are-you-box <?php if ($j == 0) echo 'you-select'; ?>" href="#s<?php echo $act_tag; ?>" id="<?php echo $act_tag; ?>">
+
+                                    <div class="are-box-in">
+
+                                        <div class="are-in-content">
+
+                                        <?php if(get_sub_field('page') != 'Eligibility'){ ?>
+
+                                            <span class="box-icon">
+
+                                                <img src="<?php echo $boxData[$j]['active_icon']['url']; ?>" class="selct-img" alt="international icon">
+
+                                                <img src="<?php echo $boxData[$j]['icon']['url']; ?>" class="grey-icon" alt=" international icon">
+
+                                            </span>
+
+                                            <?php } ?>
+
+                                            <span class="box-title"><?php _ol($boxData[$j]['title']); ?></span>
+
+                                            <?php 
+											//_ol($boxData[$j]['description']); 
+											echo preg_replace("/<p[^>]*>(?:\s|&nbsp;)*<\/p>/", '', $boxData[$j]['description']);
+											?>
+
+                                            <?php if($boxData[$j]['cta_label']){ ?>
+
+                                            <button onclick="window.location.href='#<?php echo $act_tag; ?>'">
+
+                                                <span><?php _ol($boxData[$j]['cta_label']); ?></span>
+
+                                                <span>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="16" viewBox="0 0 27 16" fill="none">
+
+                                                        <path d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM0 9H26V7H0V9Z" fill="white" />
+
+                                                    </svg>
+
+                                                </span>
+
+                                            </button>
+
+                                            <?php }?>
+
+                                        </div>
+
+                                        <div class="are-in-image">
+
+                                            <img src="<?php echo $boxData[$j]['image']['url']; ?>" alt=" avtar image">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            <?php
+
+                            }; ?>
+
+                        </div>
+
+                        <div class="are-you-content">
+
+                            <?php
+
+                            $flag = true;
+
+                            foreach ($boxData as $box) {
+
+                                $act_tag = $box['tag'];
+
+                            ?>
+
+                                <div class="are-select" id="s<?php echo $act_tag; ?>" <?php if (!$flag) echo 'style="display: none;"'; ?>>
+<?php if($tab_selected_title[$act_tag]!=""){ ?>
+                                    <div class="you-selected"><?php echo __( 'You selected', 'oinp' ); ?> <span><?php _ol($tab_selected_title[$act_tag]); ?></span> </div>
+                                    <?php } ?>
+<?php if($tab_selected_additional_text[$act_tag]!=""){ ?>
+                                    <div class="you-selected-cont"><?php _ol($tab_selected_additional_text[$act_tag]); ?></div>
+                                    <?php } ?>
+                                    <div class="are-tab-main">
+
+                                        <div class="are-tab-head">
+
+                                            <ul>
+
+                                                <?php
+
+                                                $first = true;
+
+                                                foreach ($tab_head[$act_tag] as $key => $val) { ?>
+
+                                                    <li <?php if ($first) echo 'class="active"'; ?>><a href="#<?php echo $key; ?>"><?php _ol($val); ?></a></li>
+
+                                                <?php $first = false;
+
+                                                } ?>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="are-tab-content">
+
+                                            <?php 
+											
+											$ii=1;
+											foreach ($tab_body[$act_tag] as $key => $val) { ?>
+
+                                                <div class="tab-content-txts" id="<?php echo $key; ?>" <?php if ($ii!=1)  echo 'style="display:none"'; ?>>
+
+                                                    <span class="tab-content-title"><?php _ol($val['title']); ?></span>
+
+                                                    <?php 
+													//_ol($val['description']); 
+													echo preg_replace("/<p[^>]*>(?:\s|&nbsp;)*<\/p>/", '', $val['description']);
+													?>
+
+                                                    <?php if (sizeof($val['toggle_items']) > 0) { ?>
+
+                                                        <section class="question-section">
+
+                                                            <div class="container">
+
+                                                                <div class="toggle-section-faq">
+
+                                                                    <?php
+
+                                                                    $flag = true;
+
+                                                                    foreach ($val['toggle_items'] as $qa) {
+
+                                                                    ?>
+
+                                                                        <div class="toggle-contents-faq  <?php echo ($flag) ? 'open' : ''; ?> ">
+
+                                                                            <div class="question-toggle">
+
+                                                                                <span class="toggle-title-faq"><?php _ol($qa['heading']); ?></span>
+
+                                                                                <div class="plus-minus-icon"></div>
+
+                                                                            </div>
+
+
+
+                                                                            <div class="toggle-texts-faq " <?php echo (!$flag) ? 'style="display:none"' : ''; ?>>
+
+                                                                                <?php 
+																				
+																				//_ol($qa['description']); 
+																				echo preg_replace("/<p[^>]*>(?:\s|&nbsp;)*<\/p>/", '', $qa['description']);
+																				?>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    <?php $flag = false;
+
+                                                                    } ?>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </section>
+
+                                                    <?php } ?>
+
+                                                </div>
+
+                                            <?php $ii++; } ?>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            <?php
+
+                                $flag = false;
+
+                            }; ?>
+
+                        </div>
+
+                    </div>
+
+                <?php
+
+                endif;
+
+                ?>
+
+            </div>
+
+        </section>
+
+<?php
+
+    endwhile;
+
+endif; ?>
+
