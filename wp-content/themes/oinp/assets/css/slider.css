@@ -1,0 +1,208 @@
+html,
+body {
+    height: 100%;
+}
+
+.slider-main {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0px;
+
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    position: relative;
+    width: var(--swiper-width);
+    opacity: .5;
+    transform: scale(.84);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.4285rem;
+
+}
+
+.slider-main .swiper .swiper-slide.swiper-slide-prev {
+    left: 65px !important;
+}
+
+.swiper-slide.swiper-slide-next {
+    left: -65px !important;
+    z-index: -1;
+}
+.swiper-slide:nth-child(8) .swiper-image .image .slider-content{
+    font-size: 14px;
+}
+.swiper-slide:nth-child(2) .swiper-image .image .slider-content{
+    font-size: 14px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+
+    background-position: bottom !important;
+    top: unset !important;
+    /* left: 50% !important; */
+    /* right: unset !important; */
+    margin-top: unset !important;
+    height:0 !important;
+    padding-top:60px !important;
+}
+
+.swiper-button-next {
+    /* background: url('../images/slider-right-arrow.png') no-repeat bottom !important; */
+    background: none !important;
+}
+
+.swiper-button-prev {
+    /* background: url('../images/slider-left-arrow.png') no-repeat bottom !important; */
+    background: none !important;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    transform: scale(.84) translateZ(0);
+}
+
+.swiper-slide.swiper-slide-active {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+
+}
+
+.swiper-slide.swiper-slide-active .swiper-image::after {
+    content: '';
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+
+.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+    transform: scale(1) translateZ(0) !important;
+}
+
+.swiper-slide.swiper-slide-active .swiper-image {
+
+
+    background: linear-gradient(180deg, rgba(0, 159, 247, 0.18) 0%, rgba(30, 30, 30, 0) 100%);
+    border: 1px solid #005382;
+
+}
+
+.swiper-image {
+    position: relative;
+    width: auto;
+    height: 100%;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    min-height: 350px;
+    border-radius: 33px;
+    padding: 33px 75px 40px 54px;
+
+  
+
+}
+
+.swiper-image .image {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-image .image .identify-icon {
+
+    width: 70px;
+    height: 76px;
+
+}
+
+.swiper-image .image .slider-content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    margin-top: 58px;
+    color: #FFFFFF;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 8px;
+    width: 12px;
+    height: 12px;
+    margin-top: 0;
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #fff;
+    font-size: 12px;
+}
+
+.swiper-button-next {
+    transform: translate(50%, -50%);
+    right: calc((100% - 45px) / 2) !important;
+}
+
+.swiper-button-prev {
+    transform: translate(-50%, -50%);
+    left: calc((100% - 45px) / 2) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .swiper {
+        height: calc(var(--swiper-mobile-width) * var(--swiper-image-ratio) / 100%);
+    }
+
+    .swiper-slide {
+        width: var(--swiper-mobile-width);
+        transform: scale(var(--swiper-mobile-inactive-scale));
+    }
+
+    .swiper-backface-hidden .swiper-slide.swiper-slide {
+        transform: scale(var(--swiper-mobile-inactive-scale)) translateZ(0);
+    }
+
+    .swiper-button-next {
+        bottom: -60px;
+        /* left: 42% !important; */
+    }
+
+    .swiper-button-prev {
+        bottom: -60px;
+        /* left: 42% !important; */
+
+    }
+
+    .swiper-image {
+        border:none;
+    }
+    .swiper-image .image .slider-content {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    .swiper-image {
+        width: auto;
+        padding: 48px 33px 39px 42px;
+        min-height: 285px;
+        height: 100%;
+    }
+
+    .swiper-image .image .slider-content {
+
+        margin-top: 5px;
+    }
+}
