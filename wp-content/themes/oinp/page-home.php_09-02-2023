@@ -1,0 +1,392 @@
+<?php
+
+/**
+ * Template Name: OINP Home
+ *
+ * This is the template for OINP Home page.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package OINP
+ */
+?>
+<?php get_header(); ?>
+<?php $secHero = get_field('hero'); ?>
+<?php if (have_rows('overview')) :
+  while (have_rows('overview')) : the_row(); ?>
+    <section class="banner">
+      <div class="banner-inner ">
+        <div class="banner-item">
+          <div class="banner-images">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/banner.jpg" class="desk-banner" alt="banner slide - The Future is Ontario">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/mobile-banner.jpg" class="mobile-banner" alt="The Future is Ontario banner">
+          </div>
+          <div class="container">
+            <h1 class="h1-titles"><?php _ol(get_sub_field('title')); ?></h1>
+            <p class="banner-cnt"><?php _ol(get_sub_field('description')); ?></p>
+            <a href="<?php _ol(get_sub_field('cta_url')); ?>" target="_blank" class="banner-learn color-blue">
+              <span><?php _ol(get_sub_field('cta_label')); ?></span>
+              <img src="<?php _ol(get_template_directory_uri()); ?>/assets/images/white-arow.svg" alt="arrow-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+<?php
+endwhile;
+endif; ?>
+<?php $secOverview = get_field('overview'); ?>
+<div class="trans-bg">
+  <?php if (have_rows('overview')) :
+    while (have_rows('overview')) : the_row(); ?>
+      <section class="overview">
+        <div class="container">
+          <div class="overview-in">
+            <div class="overview-map">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/map-gif.gif" alt="map gif file">
+            </div>
+            <div class="overview-content">
+              <h6 class="overview-sub-title"><?php _ol(get_sub_field('title')); ?></h6>
+              <div class="oveview-cont">
+                <p><?php _ol(get_sub_field('sub_title')); ?></p>
+                <p><?php _ol(get_sub_field('description')); ?></p>
+              </div>
+              <a href="<?php _ol(get_sub_field('cta_URL')); ?>" class="overview-more">
+                <span><?php _ol(get_sub_field('cta_label')); ?></span>
+                <img src="<?php _ol(get_template_directory_uri()); ?>/assets/images/white-arow.svg" alt="arrow-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  <?php
+  endwhile;
+  endif; ?>
+  <?php $secEntrepreneurs = get_field('entrepreneurs'); ?>
+  <?php if (have_rows('entrepreneurs')) :
+    while (have_rows('entrepreneurs')) : the_row(); ?>
+      <section class="entrepreneurs">
+        <div class="container">
+          <div class="entrepreneurs-in">
+            <?php
+            if (have_rows('items')) :
+              while (have_rows('items')) : the_row();
+            ?>
+                <div class="entrepreneur-box">
+                  <span class="entre-icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/international-entreprener.svg" alt="International entrepreneurs icon">
+                  </span>
+                  <div class="entre-texts">
+                    <span class="entre-sub-text"><?php _ol(get_sub_field('title')); ?></span>
+                    <p class="entre-main-texts"><?php _ol(get_sub_field('sub_title')); ?></p>
+                    <a href="<?php _ol(get_sub_field('cta_URL')); ?>" class="entre-more">
+                      <span><?php _ol(get_sub_field('cta_label')); ?></span>
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-arrow.png" alt="arrow icon">
+                    </a>
+                  </div>
+                </div>
+            <?php
+            endwhile;
+            endif; ?>
+          </div>
+        </div>
+      </section>
+  <?php
+  endwhile;
+  endif;
+  ?>
+  <section class="helps">
+    <div class="container">
+      <div class="helps-in">
+        <div class="helps-left">
+          <?php if (have_rows('tbdc_helps')) :
+            while (have_rows('tbdc_helps')) : the_row(); ?>
+              <span class="help-cap"><?php _ol(get_sub_field('title')); ?></span>
+              <h2 class="h1-titles"><?php _ol(get_sub_field('sub_title')); ?></h2>
+              <p class="helps-content"><?php _ol(get_sub_field('description')); ?></p>
+              <a href="<?php _ol(get_sub_field('cta_URL')); ?>" class="help-btn">
+                <span><?php _ol(get_sub_field('cta_label')); ?></span>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="arrow icon" class="help-icon-desk">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mobile-arrow.svg" alt="help icon" class="help-icon-mob">
+
+              </a>
+          <?php
+          endwhile;
+          endif; ?>
+        </div>
+        <div class="helps-right">
+          <?php if (have_rows('tbdc_services')) :
+            while (have_rows('tbdc_services')) : the_row(); ?>
+              <span class="help-right-cap"><?php _ol(get_sub_field('title')); ?></span>
+              <div class="help-right-tabs">
+                <div class="help-tab-head">
+                  <div class="entre-tabs selected"><a href="#international"><?php _ol(get_sub_field('tab_1_heading')); ?></a></div>
+                  <div class="entre-tabs"><a href="#domestic"><?php _ol(get_sub_field('tab_2_heading')); ?></a></div>
+                </div>
+                <div class="help-tab-content">
+                  <div class="tab-content-box" id="international">
+                    <?php if (have_rows('tab_1_items')) :
+                      while (have_rows('tab_1_items')) : the_row(); ?>
+                        <div class="service-list">
+                          <div class="service-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/chat.svg" alt="TBDC Sevice - chat icon">
+                          </div>
+                          <p class="service-content"><?php _ol(get_sub_field('description')); ?></p>
+                        </div>
+                    <?php
+                    endwhile;
+                    endif; ?>
+                  </div>
+                  <div class="tab-content-box" id="domestic" style="display:none;">
+                    <?php if (have_rows('tab_1_items')) :
+                      while (have_rows('tab_1_items')) : the_row(); ?>
+                        <div class="service-list">
+                          <div class="service-icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cms/chat.svg" alt="TBDC Sevice - chat icon">
+                          </div>
+                          <p class="service-content"><?php _ol(get_sub_field('description')); ?></p>
+                        </div>
+                    <?php
+                    endwhile;
+                    endif; ?>
+                  </div>
+                </div>
+              </div>
+          <?php
+          endwhile;
+          endif; ?>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="start-business">
+  <div class="container">
+    <div class="business-in">
+      <?php if (have_rows('eligibility_criteria')) :
+        while (have_rows('eligibility_criteria')) : the_row(); ?>
+          <div class="business-content">
+            <span class="title-cap"><?php _ol(get_sub_field('title')); ?></span>
+            <h2 class="h1-titles"><?php _ol(get_sub_field('sub_title')); ?></h2>
+            <div class="business-texts"><?php _ol(get_sub_field('description')); ?></div>
+
+            <a href="eligibility.html" class="elig-btn">
+              <span>Learn more</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
+                <path d="M26.9892 8.70711C27.3797 8.31658 27.3797 7.68342 26.9892 7.29289L20.6252 0.928932C20.2347 0.538408 19.6015 0.538408 19.211 0.928932C18.8205 1.31946 18.8205 1.95262 19.211 2.34315L24.8678 8L19.211 13.6569C18.8205 14.0474 18.8205 14.6805 19.211 15.0711C19.6015 15.4616 20.2347 15.4616 20.6252 15.0711L26.9892 8.70711ZM0.0390625 9H26.2821V7H0.0390625V9Z" fill="#fff"></path>
+              </svg>
+            </a>
+          </div>
+      <?php
+      endwhile;
+      endif; ?>
+      <form action="" method="post" style="width:100%">
+        <div class="business-form">
+          <?php
+          // Include form submission script 
+          // include_once 'home-submit.php';
+          ?>
+
+          <div class="busines-form-box">
+            <span class="form-box-title">Eligibility requirements</span>
+            <div class="choose-me">
+              <span class="choose-title">I’m:</span>
+              <div class="choose-type">
+                <input type="radio" id="inter1" name="radio-button" value="An International Entrepreneur" onclick="chooselookingfor(1)">
+                <label for="inter1" onclick="chooselookingfor(1)">An International Entrepreneur</label>
+              </div>
+              <div class="choose-type">
+                <input type="radio" id="domstk1" name="radio-button" value="A Domestic Business Owner" onclick="chooselookingfor(2)">
+                <label for="domstk1" onclick="chooselookingfor(2)">A Domestic Business Owner</label>
+              </div>
+            </div>
+            <div class="choose-me">
+              <span class="choose-title">Looking For:</span>
+              <div class="choose-type">
+                <input type="radio" disabled id="inter" value="Investment/Buying a Business" name="radio-button1">
+                <label for="inter">Investment/Buying a Business</label>
+              </div>
+              <div class="choose-type">
+                <input type="radio" disabled id="domstk" value="Selling Existing Business" name="radio-button1">
+                <label for="domstk">Selling Existing Business</label>
+              </div>
+            </div>
+            <div class="types">
+              <div class="ty-busi business">
+                <span class="types-title">Type of Business</span>
+                <select class="business-type" name="type" aria-label="business type select" value="<?php echo !empty($postData['type']) ? $postData['type'] : ''; ?>">
+                  <!-- <option>Agriculture</option> -->
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Hospitality">Hospitality</option>
+                  <option value="Retail">Retail</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+              <div class="ty-busi experiance">
+                <span class="types-title">Business Experience</span>
+                <select class="business-type" name="experience" aria-label="business experiance select" value="<?php echo !empty($postData['experience']) ? $postData['experience'] : ''; ?>">
+                  <!-- <option>5-7 years</option> -->
+                  <option value="Under 2 years">Under 2 years</option>
+                  <option value="2-5 years">2-5 years</option>
+                  <option value="5-7 years">5-7 years</option>
+                  <option value="7-10 years">7-10 years</option>
+                  <option value="10-15 years">10-15 years</option>
+                  <option value="7-10 years">15+ years</option>
+                </select>
+              </div>
+            </div>
+            <div class="personal">
+              <div class="personal-title-box">
+                <span class="title-text">Personal Net Worth <span>(Approx)</span></span>
+                <span class="personal-amount" id="range-slider__value">800,000</span>
+              </div>
+              <div class="personal-amount-bar">
+                <!-- <div class="amount-seeker"></div> -->
+                <!-- <div class="drag-elem"></div> -->
+
+                <input id="range-slider__range" name="range" class="amount-seeker" type="range" min="0" max="800000" value="<?php echo !empty($postData['range']) ? $postData['range'] : '0'; ?>">
+
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="form-btn">
+              <span>Continue</span>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-arrow.png" alt="white-arrow" class="desk-form">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white arrow.png" alt="white arrow" class="mob-form">
+            </a>
+            <!-- <input type="button" class="form-btn" aria-label="continue" value="Continue"> -->
+          </div>
+          <div class="busines-form-box face-back">
+            <fieldset>
+              <label for="firstname">First Name</label>
+              <input id="firstname" type="text" name="fname" class="field-box" placeholder="Enter your firstname" value="<?php echo !empty($postData['fname']) ? $postData['fname'] : ''; ?>" required="">
+            </fieldset>
+            <fieldset>
+              <label for="Lastname">Last Name</label>
+              <input id="Lastname" type="text" name="lname" class="field-box" placeholder="Enter your Lastname" value="<?php echo !empty($postData['lname']) ? $postData['lname'] : ''; ?>" required="">
+            </fieldset>
+            <fieldset>
+              <label for="Email">Enter Email Id</label>
+              <input id="Email" type="email" name="email" class="field-box" placeholder="Enter your Email Id" value="<?php echo !empty($postData['email']) ? $postData['email'] : ''; ?>" required="">
+            </fieldset>
+            <fieldset>
+              <label for="Mobile">Enter Mobile Number</label>
+              <input id="Mobile" type="number" name="mobileno" class="field-box" placeholder="Enter your Mobile number" value="<?php echo !empty($postData['mobileno']) ? $postData['mobileno'] : ''; ?>" required="">
+            </fieldset>
+            <fieldset>
+              <div class="g-recaptcha" data-sitekey="<?php echo $siteKey; ?>"></div>
+            </fieldset>
+            <input type="submit" class="submit" name="submit" value="Submit">
+          </div>
+
+          <!-- <div class="submit-form">
+                                
+                            </div> -->
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<?php if (have_rows('stream_app')) :
+  while (have_rows('stream_app')) : the_row(); ?>
+    <section class="stream">
+      <div class="container">
+        <div class="stream-app">
+          <div class="stream-text"><?php _ol(get_sub_field('description')); ?></div>
+          <div class="help-read">
+            <a class="read-text-link" href="<?php _ol(get_sub_field('cta_1_url')); ?>">
+              <span><?php _ol(get_sub_field('cta_1_label')); ?></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
+                <path d="M26.9892 8.70711C27.3797 8.31658 27.3797 7.68342 26.9892 7.29289L20.6252 0.928932C20.2347 0.538408 19.6015 0.538408 19.211 0.928932C18.8205 1.31946 18.8205 1.95262 19.211 2.34315L24.8678 8L19.211 13.6569C18.8205 14.0474 18.8205 14.6805 19.211 15.0711C19.6015 15.4616 20.2347 15.4616 20.6252 15.0711L26.9892 8.70711ZM0.0390625 9H26.2821V7H0.0390625V9Z" fill="#FFFFFF"></path>
+              </svg>
+            </a>
+            <a class="read-text-link" href="<?php _ol(get_sub_field('cta_2_url')); ?>">
+              <span><?php _ol(get_sub_field('cta_2_label')); ?></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
+                <path d="M26.9892 8.70711C27.3797 8.31658 27.3797 7.68342 26.9892 7.29289L20.6252 0.928932C20.2347 0.538408 19.6015 0.538408 19.211 0.928932C18.8205 1.31946 18.8205 1.95262 19.211 2.34315L24.8678 8L19.211 13.6569C18.8205 14.0474 18.8205 14.6805 19.211 15.0711C19.6015 15.4616 20.2347 15.4616 20.6252 15.0711L26.9892 8.70711ZM0.0390625 9H26.2821V7H0.0390625V9Z" fill="#FFFFFF"></path>
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+<?php
+endwhile;
+endif; ?>
+<?php if (have_rows('why_ontario')) :
+  while (have_rows('why_ontario')) : the_row(); ?>
+    <section class="why">
+      <div class="container">
+        <div class="why-in">
+          <div class="why-map">
+            <div id="map"></div>
+          </div>
+          <div class="why-contents">
+            <h2 class="h1-titles"><?php _ol(get_sub_field('title')); ?></h2>
+            <p class="why-texts"><?php _ol(get_sub_field('description')); ?></p>
+            <a href="<?php _ol(get_sub_field('cta_url')); ?>" class="why-btn">
+              <span><?php _ol(get_sub_field('cta_label')); ?></span>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="arrow icon" class="desk-icon">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mobile-arrow.svg" alt="arrow-icon" class="mobil-icon">
+            </a>
+            <!-- <input type="button" class="why-btn" value="continue" aria-label="continue"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+<?php
+endwhile;
+endif; ?>
+<section class="media">
+  <div class="container">
+    <div class="media-heder">
+      <div class="media-tabs">
+        <ul class="media-links">
+          <li class="active"><a href="#media">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="view-all">
+        <a href="https://www.linkedin.com/showcase/oinp-esi/posts/?feedView=all" target="_blank">
+          <span>View all</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="16" viewBox="0 0 28 16" fill="none">
+            <path d="M26.9892 8.70711C27.3797 8.31658 27.3797 7.68342 26.9892 7.29289L20.6252 0.928932C20.2347 0.538408 19.6015 0.538408 19.211 0.928932C18.8205 1.31946 18.8205 1.95262 19.211 2.34315L24.8678 8L19.211 13.6569C18.8205 14.0474 18.8205 14.6805 19.211 15.0711C19.6015 15.4616 20.2347 15.4616 20.6252 15.0711L26.9892 8.70711ZM0.0390625 9H26.2821V7H0.0390625V9Z" fill="#000"></path>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+    <div class="media-contents">
+      <div class="media-tabs owl-carousel " id="news">
+        <div class="media-blocks">
+
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7018245222010687488" height="913" width="371" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div class="media-blocks">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7016104514386632704" height="913" width="371" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div class="media-blocks">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7009165612929212416" height="913" width="371" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<?php if (have_rows('advisor_text')) :
+  while (have_rows('advisor_text')) : the_row(); ?>
+    <div class="advisor">
+      <p class="advisor-texts"><?php _ol(get_sub_field('title')); ?></p>
+      <span class="advisor-icon">
+        <a href="<?php _ol(get_sub_field('cta_url')); ?>">
+          <span><?php _ol(get_sub_field('cta_label')); ?></span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-arow.svg" alt="advisor more icon">
+        </a>
+      </span>
+    </div>
+<?php
+endwhile;
+endif; ?>
+<?php get_footer();  ?>
